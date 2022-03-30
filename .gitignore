@@ -13,3 +13,4 @@ source/css/*.map
 Thumbs.db
 _temp/*
 jewellery.code-workspace
+build/
