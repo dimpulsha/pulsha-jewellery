@@ -1,0 +1,29 @@
+.link {
+  display: block;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+
+.link--icon {
+  @media (max-width: $tablet-max-width) {
+    &::after {
+      display: none;
+    }
+  }
+}

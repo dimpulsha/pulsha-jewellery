@@ -1,0 +1,20 @@
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 24px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+}
+
+.site-nav__list li {
+  margin-left: 35px;
+  @media (max-width: $tablet-max-width) {
+    margin-left: 0;
+    margin-bottom: 33px;
+  }
+}

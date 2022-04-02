@@ -6,6 +6,8 @@
 $color-default-black: #000000;
 $color-default-white: #ffffff;
 $color-transparent: rgba(255, 255, 255, 0);
+$color-transparent-15: rgba(255, 255, 255, 0.15);
+$color-transparent-75: rgba(255, 255, 255, 0.75);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -18,11 +20,22 @@ $zorba: #9b9997;
 $desert-storm: #f0eae4;
 $link-water: #d8d9da;
 
+
 // Цвета по назначению
 // ---------------------------------
 $text: $wood-bark;
 $accented-text: $medium-wood;
 $inversion-text: $color-default-white;
+$head-about-text: $color-transparent-75;
+$accented-logo: $medium-wood;
+$inversion-logo: $color-default-white;
+$inactive-text: $zorba;
+$accented-line: $medium-wood;
+$icon-color: $wood-bark;
+$icon-color-accented: $medium-wood;
+$icon-color-active: $zorba;
+$background-accented: $medium-wood;
+$search-form-bg: $color-transparent-15;
 
 // Gradient
 

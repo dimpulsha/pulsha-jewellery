@@ -1,0 +1,16 @@
+.login--mobile {
+  display: none;
+}
+
+.page--menu-open .login--mobile,
+.no-js .login--mobile {
+  @media (max-width: $tablet-max-width) {
+    display: initial;
+  }
+}
+
+.login--desktop {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}

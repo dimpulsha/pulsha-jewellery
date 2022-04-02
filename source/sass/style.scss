@@ -9,17 +9,27 @@
 // ---------------------------------
 
 @import "variables";
-@import "mixins";
+// @import "mixins";
+@import "viewport";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+// @import "global/container";
+@import "global/html";
 
 // Blocks
 // ---------------------------------
 
-// @import "blocks/btn";
+@import "blocks/btn";
+@import "blocks/search-form";
+@import "blocks/link.scss";
 // @import "blocks/modal";
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/user-menu";
+@import "blocks/login";
+@import "blocks/site-nav";
+@import "blocks/about";
 
 
 // ---------------------------------

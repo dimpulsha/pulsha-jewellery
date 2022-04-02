@@ -1,0 +1,130 @@
+.header {
+  @media (max-width: $tablet-max-width) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.page--menu-open header,
+.no-js header {
+  @media (max-width: $tablet-max-width) {
+    background-color: $background-accented;
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "a b c"
+    "d d d"
+    "e e e"
+    "f f f";
+  color: $text;
+}
+
+.page--menu-open .header__container,
+.no-js .header__container {
+  @media (max-width: $tablet-max-width) {
+    color: $inversion-text;
+  }
+}
+
+.header__menu-button {
+  display: none;
+
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    grid-area: a;
+    justify-self: start;
+    align-self: center;
+
+    & use {
+      stroke: currentColor;
+    }
+  }
+}
+
+.header_search {
+  grid-area: a;
+  margin-top: 47px;
+  margin-bottom: 56px;
+  justify-self: start;
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.page--menu-open .header_search,
+.no-js .header_search {
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    grid-area: d;
+    margin-top: 0;
+  }
+}
+
+.header__logo {
+  grid-area: b;
+  margin-top: 30px;
+  padding-bottom: 19px;
+}
+
+.header__logo-icon {
+  fill: $accented-logo;
+}
+
+.page--menu-open .header__logo-icon,
+.no-js .header__logo-icon {
+  @media (max-width: $tablet-max-width) {
+    fill: currentColor;
+  }
+}
+
+.header__user-menu {
+  grid-area: c;
+  margin-top: 47px;
+}
+
+.header__site-nav {
+  grid-area: e;
+  justify-self: center;
+  margin-left: -15px;
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.page--menu-open .header__site-nav,
+.no-js .header__site-nav {
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    justify-self: start;
+    margin-left: 0;
+  }
+}
+
+.header__about {
+  grid-area: f;
+  display: none;
+}
+
+.page--menu-open .header__about,
+.no-js .header__about {
+  @media (max-width: $tablet-max-width) {
+    margin-top: 15px;
+    display: initial;
+    justify-self: start;
+  }
+}
+
+.page--menu-open .header__login-mobile,
+.no-js .header__login-mobile {
+  @media (max-width: $tablet-max-width) {
+    margin-top: 25px;
+  }
+}
