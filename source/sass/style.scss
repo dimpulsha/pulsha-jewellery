@@ -9,7 +9,7 @@
 // ---------------------------------
 
 @import "variables";
-// @import "mixins";
+@import "mixins";
 @import "viewport";
 @import "global/fonts";
 @import "global/reboot";
@@ -22,7 +22,7 @@
 
 @import "blocks/btn";
 @import "blocks/search-form";
-@import "blocks/link.scss";
+@import "blocks/link";
 // @import "blocks/modal";
 @import "blocks/page";
 @import "blocks/header";
@@ -30,6 +30,8 @@
 @import "blocks/login";
 @import "blocks/site-nav";
 @import "blocks/about";
+@import "blocks/footer";
+@import "blocks/subscribe-form";
 
 
 // ---------------------------------

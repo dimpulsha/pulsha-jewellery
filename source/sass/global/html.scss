@@ -13,6 +13,10 @@ box-sizing: inherit;
   cursor: pointer;
 }
 
+* h1, * h2, * h3, * p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
