@@ -4,7 +4,6 @@
   "description": "Стартовый шаблон сборки Лиги А",
   "browserslist": [
     "last 3 versions",
-    "IE 11",
     "Firefox ESR"
   ],
   "scripts": {

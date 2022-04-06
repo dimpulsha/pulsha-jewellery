@@ -1,0 +1,45 @@
+.promo {
+  min-height: 463px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $desktop-size) {
+    background-image: url("../img/main/head/promo-desktop@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/head/promo-desktop@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-max-width) {
+    background-image: url("../img/main/head/promo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/head/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    background-image: url("../img/main/head/promo-mobile@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/head/promo-mobile@2x.jpg");
+    }
+  }
+}
+
+.promo h1 {
+  font-family: $secondary-font;
+  font-size: 38px;
+  line-height: 49px;
+  font-weight: 400;
+  color: $inversion-text;
+
+  & span {
+    font-style: italic;
+  }
+}

@@ -72,7 +72,6 @@
           </ul>
         </nav>
         <ul class="header__about about">
-          <!-- общий about для футтера - попробовать -->
           <li><a href="#" class="link">About CH</a></li>
           <li><a href="#" class="link">Stores & Hours</a></li>
           <li><a href="#" class="link">Contact Us</a></li>
@@ -81,7 +80,412 @@
       </div>
     </div>
   </header>
-  <main class="page__main main">
+  <main class="page__main">
+    <section class="page__section promo">
+      <h1>PERFECTION <br> <span>made to be yours</span></h1>
+    </section>
+    <section class="page__section page__section--slider new">
+      <div class="page__wrapper">
+        <!-- миксин для заголовка -->
+        <h2>New In</h2>
+        <div class="slider-arrows new__slider-arrows">
+          <button class="button slider-arrows__item slider-arrows__item--prew" type="button">
+            <span class="visually-hidden">Back</span>
+            <svg width="29" height="9" viewbox="0 0 29 9" fill="black">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="button slider-arrows__item slider-arrows__item--next" type="button">
+            <span class="visually-hidden">Forward</span>
+            <svg width="29" height="9" viewbox="0 0 29 9" fill="none">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- тоже можно миксин -->
+        <a class="page__section-head-link link" href="#">Shop Now</a>
+      </div>
+      <div class="slider-content">
+
+      </div>
+      <div class="slider-pagination">
+        <div class="slider-pagination__counter">
+          <span class="slider-pagination__count-item"></span>
+        </div>
+      </div>
+    </section>
+    <section class="page__section blog">
+      <div class="page__wrapper ">
+        <h2>Blog</h2>
+        <a class="page__section-head-link link link--underline" href="#">Read All</a>
+        <div class="blog__wrapper">
+          <ul class="blog__articles">
+            <li>
+              <div class="blog__article-image">
+                <picture>
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/main/blog/jess-harper-sunday-mobile@1x.webp 1x, img/main/blog/jess-harper-sunday-mobile@2x.webp 2x">
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/main/blog/jess-harper-sunday-tablet@1x.webp 1x, img/main/blog/jess-harper-sunday-tablet@2x.webp 2x">
+                  <!-- 1x -->
+                  <source type="image/webp"
+                    srcset="img/main/blog/jess-harper-sunday-desktop@1x.webp 1x, img/main/blog/jess-harper-sunday-desktop@2x.webp 2x">
+                  <!-- mob   -->
+                  <img srcset="img/main/blog/jess-harper-sunday-desktop@1x.jpg 285w,
+                              img/main/blog/jess-harper-sunday-desktop@2x.jpg 570w,
+                              img/main/blog/jess-harper-sunday-tablet@1x.jpg 339w,
+                              img/main/blog/jess-harper-sunday-tablet@2x.jpg 768w,
+                              img/main/blog/jess-harper-sunday-mobile1x.jpg 290w,
+                              img/main/blog/jess-harper-sunday-mobile@2x.jpg 580w" sizes="
+                              (min-width: 1024px) 285px,
+                              ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                              (min-width: 768px) 339px,
+                              ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                              (max-width: 767px) 290px,
+                              ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+                    src="img/main/blog/jess-harper-sunday-desktop@1x.jpg" alt="jess harper sunday">
+                </picture>
+              </div>
+              <div class="blog__article-wrapper">
+                <div class="blog__article-content">
+                  <h3>How to care for <br> your jewellery</h3>
+                  <time datetime="2019-09-30">September 30, 2019</time>
+                  <a class="link link--underline" href="#">Read Article</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog__article-image">
+                <picture>
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/main/blog/alex-holyoake-mobile@1x.webp 1x, img/main/blog/alex-holyoake-mobile@2x.webp 2x">
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/main/blog/alex-holyoake-tablet@1x.webp 1x, img/main/blog/alex-holyoake-tablet@2x.webp 2x">
+                  <!-- 1x -->
+                  <source type="image/webp"
+                    srcset="img/main/blog/alex-holyoake-desktop@1x.webp 1x, img/main/blog/alex-holyoake-desktop@2x.webp 2x">
+                  <!-- mob   -->
+                  <img srcset="img/main/blog/alex-holyoake-desktop@1x.jpg 285w,
+                              img/main/blog/alex-holyoake-desktop@2x.jpg 570w,
+                              img/main/blog/alex-holyoake-tablet@1x.jpg 339w,
+                              img/main/blog/alex-holyoake-tablet@2x.jpg 768w,
+                              img/main/blog/alex-holyoake-mobile@1x.jpg 290w,
+                              img/main/blog/alex-holyoake-mobile@2x.jpg 580w" sizes="
+                              (min-width: 1024px) 285px,
+                              ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                              (min-width: 768px) 339px,
+                              ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                        ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+                    src="img/main/blog/alex-holyoake-desktop-desktop@1x.jpg" alt="alex holyoake">
+                </picture>
+              </div>
+              <div class="blog__article-wrapper">
+                <div class="blog__article-content">
+                  <h3>Power of <br> crystals</h3>
+                  <time datetime="2019-09-23">September 23, 2019</time>
+                  <a class="link link--underline" href="#">Read Article</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog__article-image">
+                <picture>
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/main/blog/alve-odonnell-mobile@1x.webp 1x, img/main/blog/alve-odonnell-mobile@2x.webp 2x">
+                  <!-- 1x  -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/main/blog/alve-odonnell-tablet@1x.webp 1x, img/main/blog/alve-odonnell-tablet@2x.webp 2x">
+                  <!-- 1x -->
+                  <source type="image/webp"
+                    srcset="img/main/blog/alve-odonnell-desktop@1x.webp 1x, img/main/blog/alve-odonnell-desktop@2x.webp 2x">
+                  <!-- mob   -->
+                  <img srcset="img/main/blog/alve-odonnell-desktop@1x.jpg 570w,
+                            img/main/blog/alve-odonnell-desktop@2x.jpg 1440w,
+                            img/main/blog/alve-odonnell-tablet@1x.jpg 339w,
+                            img/main/blog/alve-odonnell-tablet@2x.jpg 768w,
+                            img/main/blog/alve-odonnell-mobile@1x.jpg 290w,
+                            img/main/blog/alve-odonnell-mobile@2x.jpg 580w" sizes="
+                            (min-width: 1024px) 570px,
+                            ((min-width:1024px) and (min-resolution: 2dppx)) 1440px,
+                            (min-width: 768px) 339px,
+                            ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                            (max-width: 767px) 290px,
+                            ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+                    src="img/main/blog/alve-odonnell-desktop@1x.jpg" alt="alve odonnell">
+                </picture>
+              </div>
+              <div class="blog__article-wrapper">
+                <div class="blog__article-content">
+                  <h3>AW 19 trends</h3>
+                  <time datetime="2019-09-16">September 16, 2019</time>
+                  <a class="link link--underline" href="#">Read Article</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="page__section faq">
+      <div class="page__wrapper ">
+        <h2>Frequently asked questions</h2>
+        <ul class="faq__question-list accordeon ">
+          <li class="accordeon-item accordeon-item--open">
+            <div class="faq__question-head accordeon__control">
+              <h3>What materials are the jewellery made of?</h3>
+              <button class="button" type="button"><span class="visually-hidden">Expand question</span>
+                <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                  <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__answer">
+              <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious stones
+                and crystals.</p>
+            </div>
+          </li>
+          <li class="accordeon-item">
+            <div class="faq__question-head accordeon__control">
+              <h3>Which countries do you deliver to?</h3>
+              <button class="button" type="button"><span class="visually-hidden">Expand question</span>
+                <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                  <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__answer">
+              <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious stones
+                and crystals.</p>
+            </div>
+          </li>
+          <li class="accordeon-item">
+            <div class="faq__question-head accordeon__control">
+              <h3>What are the payment methods?</h3>
+              <button class="button" type="button"><span class="visually-hidden">Expand question</span>
+                <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                  <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__answer">
+              <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious stones
+                and crystals.</p>
+            </div>
+          </li>
+          <li class="accordeon-item">
+            <div class="faq__question-head accordeon__control ">
+              <h3>Can I return the jewellery if it didn’t fit me?</h3>
+              <button class="button" type="button"><span class="visually-hidden">Expand question</span>
+                <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                  <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__answer">
+              <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious stones
+                and crystals.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page__section follow">
+      <div class="page__wrapper">
+        <h2>@Chjewellery</h2>
+        <a class="page__section-head-link link link--underline" href="#">Follow Us</a>
+
+      <ul class="follow__pictures-list">
+        <li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/8-mobile@1x.webp 1x, img/main/follow/8-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/8-tablet@1x.webp 1x, img/main/follow/8-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp"
+              srcset="img/main/follow/8-desktop@1x.webp 1x, img/main/follow/8-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/8-desktop@1x.jpg 230w,
+                              img/main/follow/8-desktop@2x.jpg 570w,
+                              img/main/follow/8-tablet@1x.jpg 339w,
+                              img/main/follow/8-tablet@2x.jpg 768w,
+                              img/main/follow/8-mobile1x.jpg 290w,
+                              img/main/follow/8-mobile@2x.jpg 580w" sizes="
+                              (min-width: 1024px) 285px,
+                              ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                              (min-width: 768px) 339px,
+                              ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                              (max-width: 767px) 290px,
+                              ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/8-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/2-mobile@1x.webp 1x, img/main/follow/2-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/2-tablet@1x.webp 1x, img/main/follow/2-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/2-desktop@1x.webp 1x, img/main/follow/2-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/2-desktop@1x.jpg 230w,
+                                      img/main/follow/2-desktop@2x.jpg 570w,
+                                      img/main/follow/2-tablet@1x.jpg 339w,
+                                      img/main/follow/2-tablet@2x.jpg 768w,
+                                      img/main/follow/2-mobile1x.jpg 290w,
+                                      img/main/follow/2-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/2-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li><li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/4-mobile@1x.webp 1x, img/main/follow/4-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/4-tablet@1x.webp 1x, img/main/follow/4-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/4-desktop@1x.webp 1x, img/main/follow/4-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/4-desktop@1x.jpg 230w,
+                                      img/main/follow/4-desktop@2x.jpg 570w,
+                                      img/main/follow/4-tablet@1x.jpg 339w,
+                                      img/main/follow/4-tablet@2x.jpg 768w,
+                                      img/main/follow/4-mobile1x.jpg 290w,
+                                      img/main/follow/4-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/4-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li><li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/6-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/6-tablet@1x.webp 1x, img/main/follow/6-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/6-desktop@1x.webp 1x, img/main/follow/6-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/6-desktop@1x.jpg 230w,
+                                      img/main/follow/6-desktop@2x.jpg 570w,
+                                      img/main/follow/6-tablet@1x.jpg 339w,
+                                      img/main/follow/6-tablet@2x.jpg 768w,
+                                      img/main/follow/6-mobile1x.jpg 290w,
+                                      img/main/follow/6-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/6-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li><li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/1-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/1-tablet@1x.webp 1x, img/main/follow/1-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/1-desktop@1x.webp 1x, img/main/follow/1-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/1-desktop@1x.jpg 230w,
+                                      img/main/follow/1-desktop@2x.jpg 570w,
+                                      img/main/follow/1-tablet@1x.jpg 339w,
+                                      img/main/follow/1-tablet@2x.jpg 768w,
+                                      img/main/follow/1-mobile1x.jpg 290w,
+                                      img/main/follow/1-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/1-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li><li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/5-mobile@1x.webp 1x, img/main/follow/5-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/5-tablet@1x.webp 1x, img/main/follow/5-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/5-desktop@1x.webp 1x, img/main/follow/5-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/5-desktop@1x.jpg 230w,
+                                      img/main/follow/5-desktop@2x.jpg 570w,
+                                      img/main/follow/5-tablet@1x.jpg 339w,
+                                      img/main/follow/5-tablet@2x.jpg 768w,
+                                      img/main/follow/5-mobile1x.jpg 290w,
+                                      img/main/follow/5-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/5-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/main/follow/7-mobile@1x.webp 1x, img/main/follow/7-mobile@2x.webp 2x">
+            <!-- 1x  -->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/main/follow/7-tablet@1x.webp 1x, img/main/follow/7-tablet@2x.webp 2x">
+            <!-- 1x -->
+            <source type="image/webp" srcset="img/main/follow/7-desktop@1x.webp 1x, img/main/follow/7-desktop@2x.webp 2x">
+            <!-- mob   -->
+            <img srcset="img/main/follow/7-desktop@1x.jpg 230w,
+                                      img/main/follow/7-desktop@2x.jpg 570w,
+                                      img/main/follow/7-tablet@1x.jpg 339w,
+                                      img/main/follow/7-tablet@2x.jpg 768w,
+                                      img/main/follow/7-mobile1x.jpg 290w,
+                                      img/main/follow/7-mobile@2x.jpg 580w" sizes="
+                                      (min-width: 1024px) 285px,
+                                      ((min-width:1024px) and (min-resolution: 2dppx)) 570px,
+                                      (min-width: 768px) 339px,
+                                      ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
+                                      (max-width: 767px) 290px,
+                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="img/main/follow/7-desktop@1x.jpg" alt="jess harper sunday">
+          </picture>
+        </li>
+      </ul>
+      </div>
+    </section>
   </main>
   <footer class="page_footer footer">
     <div class="page__wrapper">

@@ -1,0 +1,8 @@
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  color: $accented-text;
+}
+.slider-arrows svg {
+  stroke: currentColor;
+}
