@@ -24,6 +24,7 @@
   <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Poppins-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Poppins-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -84,34 +85,106 @@
     <section class="page__section promo">
       <h1>PERFECTION <br> <span>made to be yours</span></h1>
     </section>
-    <section class="page__section page__section--slider new">
+    <section class="page__section page__section--slider slider">
       <div class="page__wrapper">
-        <!-- миксин для заголовка -->
         <h2>New In</h2>
-        <div class="slider-arrows new__slider-arrows">
-          <button class="button slider-arrows__item slider-arrows__item--prew" type="button">
-            <span class="visually-hidden">Back</span>
-            <svg width="29" height="9" viewbox="0 0 29 9" fill="black">
-              <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="button slider-arrows__item slider-arrows__item--next" type="button">
-            <span class="visually-hidden">Forward</span>
-            <svg width="29" height="9" viewbox="0 0 29 9" fill="none">
-              <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <!-- тоже можно миксин -->
-        <a class="page__section-head-link link" href="#">Shop Now</a>
-      </div>
-      <div class="slider-content">
+        <div class="swiper">
+          <div class="slider__arrows">
+            <button class="button slider__arrows-item slider__arrows-item--prew swiper-button-prev" type="button">
+              <span class="visually-hidden">Back</span>
+              <svg width="29" height="9" viewbox="0 0 29 9" fill="black">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="button slider__arrows-item slider__arrows-item--next swiper-button-next" type="button">
+              <span class="visually-hidden">Forward</span>
+              <svg width="29" height="9" viewbox="0 0 29 9" fill="none">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
 
-      </div>
-      <div class="slider-pagination">
-        <div class="slider-pagination__counter">
-          <span class="slider-pagination__count-item"></span>
+          <a class="page__section-head-link link link--underline" href="#">Shop Now</a>
+
+          <div class="slider-content__image-list swiper-wrapper">
+            <div class="slider__item swiper-slide">
+              <picture>
+
+                <img src="./img/main/slider/purple-gemstone-desktop@1x.jpg" alt="purple gemstone">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/layered-choker-desktop@1x.jpg" alt="layered choker">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Layered сhoker</h3>
+                <p>$ 115</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/dainty-gold-desktop@1x.jpg" alt="dainty gold">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Gold chain</h3>
+                <p>$ 215</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/galaxy-earrings-desktop@1x.jpg" alt="galaxy earrings">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Galaxy earrings</h3>
+                <p>$ 95</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/purple-gemstone-desktop@1x.jpg" alt="purple gemstone">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/layered-choker-desktop@1x.jpg" alt="layered choker">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Layered сhoker</h3>
+                <p>$ 115</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/dainty-gold-desktop@1x.jpg" alt="dainty gold">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Gold chain</h3>
+                <p>$ 215</p>
+              </a>
+            </div>
+            <div class="slider__item swiper-slide">
+              <picture>
+                <img src="./img/main/slider/galaxy-earrings-desktop@1x.jpg" alt="galaxy earrings">
+              </picture>
+              <a class="slider-content__link" href="#">
+                <h3>Galaxy earrings</h3>
+                <p>$ 95</p>
+              </a>
+            </div>
+          </div>
         </div>
+        <!-- <div class="slider-pagination "> -->
+          <div class="slider__pagination swiper-pagination"></div>
+        <!-- </div> -->
       </div>
     </section>
     <section class="page__section blog">
@@ -303,20 +376,20 @@
         <h2>@Chjewellery</h2>
         <a class="page__section-head-link link link--underline" href="#">Follow Us</a>
 
-      <ul class="follow__pictures-list">
-        <li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/8-mobile@1x.webp 1x, img/main/follow/8-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/8-tablet@1x.webp 1x, img/main/follow/8-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp"
-              srcset="img/main/follow/8-desktop@1x.webp 1x, img/main/follow/8-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/8-desktop@1x.jpg 230w,
+        <ul class="follow__pictures-list">
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/8-mobile@1x.webp 1x, img/main/follow/8-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/8-tablet@1x.webp 1x, img/main/follow/8-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/8-desktop@1x.webp 1x, img/main/follow/8-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/8-desktop@1x.jpg 230w,
                               img/main/follow/8-desktop@2x.jpg 570w,
                               img/main/follow/8-tablet@1x.jpg 339w,
                               img/main/follow/8-tablet@2x.jpg 768w,
@@ -328,21 +401,22 @@
                               ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                               (max-width: 767px) 290px,
                               ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/8-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/2-mobile@1x.webp 1x, img/main/follow/2-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/2-tablet@1x.webp 1x, img/main/follow/2-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/2-desktop@1x.webp 1x, img/main/follow/2-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/2-desktop@1x.jpg 230w,
+                src="img/main/follow/8-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/2-mobile@1x.webp 1x, img/main/follow/2-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/2-tablet@1x.webp 1x, img/main/follow/2-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/2-desktop@1x.webp 1x, img/main/follow/2-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/2-desktop@1x.jpg 230w,
                                       img/main/follow/2-desktop@2x.jpg 570w,
                                       img/main/follow/2-tablet@1x.jpg 339w,
                                       img/main/follow/2-tablet@2x.jpg 768w,
@@ -354,20 +428,22 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/2-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li><li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/4-mobile@1x.webp 1x, img/main/follow/4-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/4-tablet@1x.webp 1x, img/main/follow/4-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/4-desktop@1x.webp 1x, img/main/follow/4-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/4-desktop@1x.jpg 230w,
+                src="img/main/follow/2-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/4-mobile@1x.webp 1x, img/main/follow/4-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/4-tablet@1x.webp 1x, img/main/follow/4-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/4-desktop@1x.webp 1x, img/main/follow/4-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/4-desktop@1x.jpg 230w,
                                       img/main/follow/4-desktop@2x.jpg 570w,
                                       img/main/follow/4-tablet@1x.jpg 339w,
                                       img/main/follow/4-tablet@2x.jpg 768w,
@@ -379,20 +455,22 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/4-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li><li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/6-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/6-tablet@1x.webp 1x, img/main/follow/6-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/6-desktop@1x.webp 1x, img/main/follow/6-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/6-desktop@1x.jpg 230w,
+                src="img/main/follow/4-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/6-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/6-tablet@1x.webp 1x, img/main/follow/6-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/6-desktop@1x.webp 1x, img/main/follow/6-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/6-desktop@1x.jpg 230w,
                                       img/main/follow/6-desktop@2x.jpg 570w,
                                       img/main/follow/6-tablet@1x.jpg 339w,
                                       img/main/follow/6-tablet@2x.jpg 768w,
@@ -404,20 +482,22 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/6-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li><li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/1-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/1-tablet@1x.webp 1x, img/main/follow/1-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/1-desktop@1x.webp 1x, img/main/follow/1-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/1-desktop@1x.jpg 230w,
+                src="img/main/follow/6-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/6-mobile@1x.webp 1x, img/main/follow/1-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/1-tablet@1x.webp 1x, img/main/follow/1-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/1-desktop@1x.webp 1x, img/main/follow/1-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/1-desktop@1x.jpg 230w,
                                       img/main/follow/1-desktop@2x.jpg 570w,
                                       img/main/follow/1-tablet@1x.jpg 339w,
                                       img/main/follow/1-tablet@2x.jpg 768w,
@@ -429,20 +509,22 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/1-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li><li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/5-mobile@1x.webp 1x, img/main/follow/5-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/5-tablet@1x.webp 1x, img/main/follow/5-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/5-desktop@1x.webp 1x, img/main/follow/5-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/5-desktop@1x.jpg 230w,
+                src="img/main/follow/1-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/5-mobile@1x.webp 1x, img/main/follow/5-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/5-tablet@1x.webp 1x, img/main/follow/5-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/5-desktop@1x.webp 1x, img/main/follow/5-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/5-desktop@1x.jpg 230w,
                                       img/main/follow/5-desktop@2x.jpg 570w,
                                       img/main/follow/5-tablet@1x.jpg 339w,
                                       img/main/follow/5-tablet@2x.jpg 768w,
@@ -454,21 +536,22 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/5-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/main/follow/7-mobile@1x.webp 1x, img/main/follow/7-mobile@2x.webp 2x">
-            <!-- 1x  -->
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/main/follow/7-tablet@1x.webp 1x, img/main/follow/7-tablet@2x.webp 2x">
-            <!-- 1x -->
-            <source type="image/webp" srcset="img/main/follow/7-desktop@1x.webp 1x, img/main/follow/7-desktop@2x.webp 2x">
-            <!-- mob   -->
-            <img srcset="img/main/follow/7-desktop@1x.jpg 230w,
+                src="img/main/follow/5-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/main/follow/7-mobile@1x.webp 1x, img/main/follow/7-mobile@2x.webp 2x">
+              <!-- 1x  -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/main/follow/7-tablet@1x.webp 1x, img/main/follow/7-tablet@2x.webp 2x">
+              <!-- 1x -->
+              <source type="image/webp"
+                srcset="img/main/follow/7-desktop@1x.webp 1x, img/main/follow/7-desktop@2x.webp 2x">
+              <!-- mob   -->
+              <img srcset="img/main/follow/7-desktop@1x.jpg 230w,
                                       img/main/follow/7-desktop@2x.jpg 570w,
                                       img/main/follow/7-tablet@1x.jpg 339w,
                                       img/main/follow/7-tablet@2x.jpg 768w,
@@ -480,10 +563,10 @@
                                       ((min-width: 768px) and (min-resolution: 2dppx)) 768px,
                                       (max-width: 767px) 290px,
                                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="img/main/follow/7-desktop@1x.jpg" alt="jess harper sunday">
-          </picture>
-        </li>
-      </ul>
+                src="img/main/follow/7-desktop@1x.jpg" alt="jess harper sunday">
+            </picture>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -555,6 +638,9 @@
       </div>
     </div>
   </footer>
+  <!-- <script src="./js/vendor.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

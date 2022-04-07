@@ -17,6 +17,12 @@
 // @import "global/container";
 @import "global/html";
 
+// Swiper
+// ------------------
+@import "swiper/swiper";
+
+
+
 // Blocks
 // ---------------------------------
 
@@ -33,8 +39,11 @@
 @import "blocks/footer";
 @import "blocks/subscribe-form";
 @import "blocks/promo";
-@import "blocks/new";
-@import "blocks/slider-arrows";
+// @import "blocks/new";
+@import "blocks/slider";
+// @import "blocks/slider-arrows";
+// @import "blocks/slider-content";
+// @import "blocks/slider-pagination";
 @import "blocks/blog";
 @import "blocks/faq";
 @import "blocks/follow";

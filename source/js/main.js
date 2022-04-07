@@ -1,24 +1,75 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+// import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+
+const swiper =
+new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.slider__arrows-item--next',
+    prevEl: '.slider__arrows-item--prew',
+  },
+
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      pagination: {
+        el: '.slider__pagination',
+        type: 'fraction',
+        // clickable: true,
+        renderFraction(currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+        },
+      },
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      pagination: {
+        el: '.slider__pagination',
+        type: 'bullets',
+        clickable: true,
+        renderBullet(index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+    },
+  },
+});
+
+// import {iosVhFix} from './utils/ios-vh-fix';
+// import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 
-  // Utils
-  // ---------------------------------
+//   // Utils
+//   // ---------------------------------
 
-  iosVhFix();
+//   iosVhFix();
 
-  // Modules
-  // ---------------------------------
+//   // Modules
+//   // ---------------------------------
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
-});
+//   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+//   // в load следует добавить скрипты, не участвующие в работе первого экрана
+//   window.addEventListener('load', () => {
+//     initModals();
+//   });
+// });
 
 // ---------------------------------
 
