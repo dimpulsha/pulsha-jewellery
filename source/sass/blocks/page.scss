@@ -22,12 +22,18 @@
   }
 }
 
+.page__wrapper--fix {
+   @media (min-width: $desktop-size) {
+     max-width: 1366px;
+   }
+}
+
 .page__header {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .page__section {
-  margin-bottom: 130px;
+  margin-bottom: 119px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 80px;
@@ -37,24 +43,38 @@
   }
 }
 
+.page__section--faq {
+  margin-bottom: 110px;
+}
+
+.page__section--follow {
+  margin-bottom: 132px;
+}
+
 .page__section h2 {
-  margin-bottom: 35px;
+  margin-bottom: 17px;
   font-family: $secondary-font;
   font-size: 34px;
   line-height: 44px;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .page__section--slider h2 {
-  margin-bottom: 13px;
+  margin-bottom: 0;
+}
+
+.page__section--follow h2 {
+  margin-bottom: 30px;
 }
 
 .page__section-head-link {
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   font-weight: 500;
 }
 
 .page__section-head-link--slider {
-  margin-top: 13px;
+  margin-bottom: 60px;
+  margin-top: 17px;
 }

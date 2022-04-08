@@ -1,0 +1,177 @@
+
+.no-js .filter-form__close-button {
+  display: none;
+}
+
+// показ формы здесь
+.filter-form {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.no-js .filter-form {
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    max-width: 422px;
+    margin: 0 auto;
+  }
+}
+
+.filter-form__fieldsets {
+  margin-bottom: 30px;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 28px 25px;
+  border: 1px solid $accented-line;
+
+  &:not(:first-child) {
+    border-top: none;
+  }
+}
+
+.no-js .filter-form fieldset {
+  border: none;
+  border-bottom: 1px solid $accented-line;
+}
+
+.filter-form__fieldset-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.filter-form__input-list {
+  margin-top: 30px;
+  padding-left: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter-form__input-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.filter-form__input-list--range {
+  position: relative;
+  padding-left: 0;
+}
+
+.filter-form__input-item input[type="checkbox"] {
+  @include visually-hidden;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    left: -25px;
+    border: 1px solid $accented-line;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accented-line;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $inactive-text;
+    text-decoration: none;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  &::before {
+    background-color: $background-accented;
+  }
+}
+
+.filter-form__range {
+  height: 1px;
+  position: relative;
+  // margin-bottom: 7px;
+}
+
+.filter-form__total-line {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid $desert-storm;
+}
+
+.filter-form__selected-line {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 60px;
+  width: 90px;
+  height: 1px;
+  border-top: 1px solid $accented-line;
+}
+
+.filter-form__range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $background-accented;
+}
+
+.filter-form__range-toggle--min {
+  left: 45px;
+}
+
+.filter-form__range-toggle--max {
+  left: 135px;
+}
+
+input[type="number"] {
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+// .filter-form__range-toggle {
+//   position: absolute;
+//   display: flex;
+//   width: 35px;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.filter-form__range-field {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 99px 99px;
+}
+
+.filter-form__range-field label {
+  // justify-self: center;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 38px;
+}
+
+.filter-form__range-field input {
+  width: 60px;
+}
+
+.filter-form__button {
+  margin-bottom: 25px;
+}

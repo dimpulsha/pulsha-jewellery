@@ -35,3 +35,21 @@
     }
   }
 }
+
+.button--fill {
+  // display: flex;
+  width: 100%;
+  min-height: 68px;
+  color: $inversion-text;
+  background-color: $background-accented;
+
+  &:active {
+    color: $text;
+  }
+}
+
+.button--clean {
+  width: 100%;
+  min-height: 68px;
+  border: 1px solid $accented-line;
+}

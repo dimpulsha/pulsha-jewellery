@@ -14,6 +14,15 @@ new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 30,
 
+  // pagination: {
+  //   el: '.slider__pagination',
+  //   type: 'bullets',
+  //   clickable: true,
+  //   renderBullet(index, className) {
+  //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+  //   },
+  // },
+
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -45,6 +54,14 @@ new Swiper('.swiper', {
       slidesPerView: 4,
       spaceBetween: 30,
       slidesPerGroup: 4,
+      pagination: {
+        el: '.slider__pagination',
+        type: 'bullets',
+        clickable: true,
+        renderBullet(index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
     },
   },
 });

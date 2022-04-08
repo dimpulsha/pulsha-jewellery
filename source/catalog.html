@@ -27,7 +27,7 @@
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
+<!-- no-js -->
 <body class="page wrapper">
   <header class="page__header header">
     <div class="page__wrapper">
@@ -85,9 +85,576 @@
     <section class="page__section page__section--catalog promo promo--catalog">
       <h1>ALL JEWELLERY <br> <span>Discover picks of fashion's finest trends in our jewellery catalog</span></h1>
     </section>
-    <div>
-      <section></section>
-      <section></section>
+    <div class="page__wrapper page__wrapper--fix">
+      <div class="catalog">
+        <section class="catalog__filter">
+            <button class="catalog__filter-control button button--fill" type="button">Filter</button>
+          <h3>Catalog filter</h3>
+          <form class="filter-form catalog__filter-form" name="catalog-filter" action="https://echo.htmlacademy.ru"
+            method="get">
+            <button class="filter-form__close-button button" type="button"><span class="visually-hidden">Close filter</span>
+              <!-- <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+              </svg> -->
+            </button>
+            <div class="filter-form__body">
+              <div class="filter-form__fieldsets">
+                <fieldset>
+                  <!-- <div class="filter-form__fieldset-control"> -->
+                  <button class="filter-form__fieldset-control button" type="button"><span>Product</span>
+                    <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                      <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-form__input-list">
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="necklaces" id="necklaces-id" checked>
+                      <label for="necklaces-id">Necklaces</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="chokers" id="chokers-id" checked>
+                      <label for="chokers-id">Chokers</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="rings" id="rings-id">
+                      <label for="rings-id">Rings</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="earrings" id="earrings-id" checked>
+                      <label for="earrings-id">Earrings</label>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset>
+                  <!-- <div class="filter-form__fieldset-control"> -->
+                  <button class="filter-form__fieldset-control button" type="button"><span>Material</span>
+                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                      <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-form__input-list">
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="gold" id="gold-id" checked>
+                      <label for="gold-id">Gold</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="silver" id="silver-id" checked>
+                      <label for="silver-id">Silver</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="platinum" id="platinum-id">
+                      <label for="platinum-id">Rings</label>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset>
+                  <!-- <div class="filter-form__fieldset-control"> -->
+                  <button class="filter-form__fieldset-control button" type="button"><span>Collection</span>
+                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                      <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-form__input-list">
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="purple-gemstone" id="purple-gemstone-id" checked>
+                      <label for="purple-gemstone-id">Purple Gemstone</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="galaxy" id="galaxy-id" checked>
+                      <label for="galaxy-id">Galaxy</label>
+                    </div>
+                    <div class="filter-form__input-item">
+                      <input type="checkbox" name="gold-bird" id="gold-bird-id">
+                      <label for="gold-bird-id">Gold Bird</label>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </fieldset>
+                <fieldset>
+                  <!-- <div class="filter-form__fieldset-control"> -->
+                  <button class="filter-form__fieldset-control button" type="button"><span>Price</span>
+                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                      <use xlink:href="img/sprite_auto.svg#icon-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter-form__input-list filter-form__input-list--range">
+                    <div class="filter-form__range">
+                      <div class="filter-form__total-line"></div>
+                      <div class="filter-form__selected-line"></div>
+                      <div class="filter-form__range-toggle filter-form__range-toggle--min" tabindex="0"></div>
+                      <div class="filter-form__range-toggle filter-form__range-toggle--max" tabindex="0"></div>
+                    </div>
+                    <!-- <div class="filter-form__range-toggle filter-form__range-toggle--min" tabindex="0"> -->
+                    <div class="filter-form__range-field">
+                      <label for="min-price-id">$&nbsp;
+                        <input type="number" id="min-price-id" name="min-price" value="55" required></label>
+                      <!-- </div> -->
+                      <!-- <div class="filter-form__range-toggle filter-form__range-toggle--max" tabindex="0"> -->
+                      <!-- <div class="filter-form__range-point"></div> -->
+                      <label for="max-price-id">$&nbsp;
+                        <input type="number" id="max-price-id" name="max-price" value="155" required></label>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <button class="filter-form__button button button--fill" type="submit">Apply</button>
+              <button class="filter-form__button button button--clean" type="reset">Clear All</button>
+            </div>
+          </form>
+        </section>
+        <section class="catalog__product-list products">
+          <h3>Products list</h3>
+          <ul class="products__list">
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/double-pearl-mobile@1x.webp 1x, img/catalog/products/double-pearl-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/double-pearl-tablet@1x.webp 1x, img/catalog/products/double-pearl-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/double-pearl-desktop@1x.webp 1x, img/catalog/products/double-pearl-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/double-pearl-desktop@1x.jpg 270w,
+                                                img/catalog/products/double-pearl-desktop@2x.jpg 540w,
+                                                img/catalog/products/double-pearl-tablet@1x.jpg 206w,
+                                                img/catalog/products/double-pearl-tablet@2x.jpg 412,
+                                                img/catalog/products/double-pearl-mobile@1x.jpg 130w,
+                                                img/catalog/products/double-pearl-mobile@2x.jpg 260w" sizes="
+                                                (min-width: 1024px) 270px,
+                                                ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                (min-width: 768px) 206px,
+                                                ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                (max-width: 767px) 130px,
+                                                ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="img/catalog/products/double-pearl-desktop@1x.jpg" alt="double pearl">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Double pearl earrings</h3>
+                    <p>$ 115</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/black-choker-mobile@1x.webp 1x, img/catalog/products/black-choker-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/black-choker-tablet@1x.webp 1x, img/catalog/products/black-choker-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/black-choker-desktop@1x.webp 1x, img/catalog/products/black-choker-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/black-choker-desktop@1x.jpg 270w,
+                                                            img/catalog/products/black-choker-desktop@2x.jpg 540w,
+                                                            img/catalog/products/black-choker-tablet@1x.jpg 206w,
+                                                            img/catalog/products/black-choker-tablet@2x.jpg 412,
+                                                            img/catalog/products/black-choker-mobile@1x.jpg 130w,
+                                                            img/catalog/products/black-choker-mobile@2x.jpg 260w"
+                      sizes="
+                                                            (min-width: 1024px) 270px,
+                                                            ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                            (min-width: 768px) 206px,
+                                                            ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                            (max-width: 767px) 130px,
+                                                            ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/black-choker-desktop@1x.jpg" alt="black choker">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Choker with gold bead</h3>
+                    <p>$ 55</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/gold-layered-mobile@1x.webp 1x, img/catalog/products/gold-layered-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/gold-layered-tablet@1x.webp 1x, img/catalog/products/gold-layered-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/gold-layered-desktop@1x.webp 1x, img/catalog/products/gold-layered-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/gold-layered-desktop@1x.jpg 270w,
+                                                              img/catalog/products/gold-layered-desktop@2x.jpg 540w,
+                                                              img/catalog/products/gold-layered-tablet@1x.jpg 206w,
+                                                              img/catalog/products/gold-layered-tablet@2x.jpg 412,
+                                                              img/catalog/products/gold-layered-mobile@1x.jpg 130w,
+                                                              img/catalog/products/gold-layered-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/gold-layered-desktop@1x.jpg" alt="gold layered necklace">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Gold layered necklace</h3>
+                    <p>$ 155</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/blue-gemstone-mobile@1x.webp 1x, img/catalog/products/blue-gemstone-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/blue-gemstone-tablet@1x.webp 1x, img/catalog/products/blue-gemstone-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/blue-gemstone-desktop@1x.webp 1x, img/catalog/products/blue-gemstone-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/blue-gemstone-desktop@1x.jpg 270w,
+                                                              img/catalog/products/blue-gemstone-desktop@2x.jpg 540w,
+                                                              img/catalog/products/blue-gemstone-tablet@1x.jpg 206w,
+                                                              img/catalog/products/blue-gemstone-tablet@2x.jpg 412,
+                                                              img/catalog/products/blue-gemstone-mobile@1x.jpg 130w,
+                                                              img/catalog/products/blue-gemstone-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/blue-gemstone-desktop@1x.jpg" alt="Blue gemstone pendant">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Blue gemstone pendant</h3>
+                    <p>$ 115</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/boho-earrings-mobile@1x.webp 1x, img/catalog/products/boho-earrings-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/boho-earrings-tablet@1x.webp 1x, img/catalog/products/boho-earrings-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/img/catalog/products/boho-earrings-desktop@1x.webp 1x, img/catalog/products/boho-earrings-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/boho-earrings-desktop@1x.jpg 270w,
+                                                              img/catalog/products/boho-earrings-desktop@2x.jpg 540w,
+                                                              img/catalog/products/boho-earrings-tablet@1x.jpg 206w,
+                                                              img/catalog/products/boho-earrings-tablet@2x.jpg 412,
+                                                              img/catalog/products/boho-earrings-mobile@1x.jpg 130w,
+                                                              img/catalog/products/boho-earrings-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/boho-earrings-desktop@1x.jpg" alt="Boho earrings">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Boho earrings</h3>
+                    <p>$ 75</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/bird-necklace-mobile@1x.webp 1x, img/catalog/products/bird-necklace-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/bird-necklace-tablet@1x.webp 1x, img/catalog/products/bird-necklace-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/bird-necklace-desktop@1x.webp 1x, img/catalog/products/bird-necklace-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/bird-necklace-desktop@1x.jpg 270w,
+                                                              img/catalog/products/bird-necklace-desktop@2x.jpg 540w,
+                                                              img/catalog/products/bird-necklace-tablet@1x.jpg 206w,
+                                                              img/catalog/products/bird-necklace-tablet@2x.jpg 412,
+                                                              img/catalog/products/bird-necklace-mobile@1x.jpg 130w,
+                                                              img/catalog/products/bird-necklace-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/bird-necklace-desktop@1x.jpg" alt="Gold bird necklace">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Gold bird necklace</h3>
+                    <p>$ 135</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/black-leather-mobile@1x.webp 1x, img/catalog/products/black-leather-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/black-leather-tablet@1x.webp 1x, img/catalog/products/black-leather-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/black-leather-desktop@1x.webp 1x, img/catalog/products/black-leather-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/black-leather-desktop@1x.jpg 270w,
+                                                              img/catalog/products/black-leather-desktop@2x.jpg 540w,
+                                                              img/catalog/products/black-leather-tablet@1x.jpg 206w,
+                                                              img/catalog/products/black-leather-tablet@2x.jpg 412,
+                                                              img/catalog/products/black-leather-mobile@1x.jpg 130w,
+                                                              img/catalog/productsblack-leather-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/black-leather-desktop@1x.jpg" alt="double pearl">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Black leather choker</h3>
+                    <p>$ 85</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/purple-gemstone-mobile@1x.webp 1x, img/catalog/products/purple-gemstone-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/purple-gemstone-tablet@1x.webp 1x, img/catalog/products/purple-gemstone-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/purple-gemstone-desktop@1x.webp 1x, img/catalog/products/purple-gemstone-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/purple-gemstone-desktop@1x.jpg 270w,
+                                                              img/catalog/products/purple-gemstone-desktop@2x.jpg 540w,
+                                                              img/catalog/products/purple-gemstone-tablet@1x.jpg 206w,
+                                                              img/catalog/products/purple-gemstone-tablet@2x.jpg 412,
+                                                              img/catalog/products/purple-gemstone-mobile@1x.jpg 130w,
+                                                              img/catalog/products/purple-gemstone-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/purple-gemstone-desktop@1x.jpg" alt="Necklace with amethyst">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Necklace with amethyst</h3>
+                    <p>$ 145</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/elephant-earrings-mobile@1x.webp 1x, img/catalog/products/elephant-earrings-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/elephant-earrings-tablet@1x.webp 1x, img/catalog/products/elephant-earrings-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/elephant-earrings-desktop@1x.webp 1x, img/catalog/products/elephant-earrings-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img
+                      srcset="img/catalog/products/elephant-earrings-desktop@1x.jpg 270w,
+                                                              img/catalog/products/elephant-earrings-desktop@2x.jpg 540w,
+                                                              img/catalog/products/elephant-earrings-tablet@1x.jpg 206w,
+                                                              img/catalog/products/elephant-earrings-tablet@2x.jpg 412,
+                                                              img/catalog/products/elephant-earrings-mobile@1x.jpg 130w,
+                                                              img/catalog/products/elephant-earrings-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/elephant-earrings-desktop@1x.jpg" alt="Elephant earrings">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Elephant earrings</h3>
+                    <p>$ 95</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/threader-necklace-mobile@1x.webp 1x, img/catalog/products/threader-necklace-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/threader-necklace-tablet@1x.webp 1x, img/catalog/products/threader-necklace-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/threader-necklace-desktop@1x.webp 1x, img/catalog/products/threader-necklace-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img
+                      srcset="img/catalog/products/threader-necklace-desktop@1x.jpg 270w,
+                                                              img/catalog/products/threader-necklace-desktop@2x.jpg 540w,
+                                                              img/catalog/products/threader-necklace-tablet@1x.jpg 206w,
+                                                              img/catalog/products/threader-necklace-tablet@2x.jpg 412,
+                                                              img/catalog/products/threader-necklace-mobile@1x.jpg 130w,
+                                                              img/catalog/products/threader-necklace-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/threader-necklace-desktop@1x.jpg" alt="Threader necklace">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Threader necklace</h3>
+                    <p>$ 115</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/origami-crane-mobile@1x.webp 1x, img/catalog/products/origami-crane-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/origami-crane-tablet@1x.webp 1x, img/catalog/products/origami-crane-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/origami-crane-desktop@1x.webp 1x, img/catalog/products/origami-crane-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/origami-crane-desktop@1x.jpg 270w,
+                                                              img/catalog/products/origami-crane-desktop@2x.jpg 540w,
+                                                              img/catalog/products/origami-crane-tablet@1x.jpg 206w,
+                                                              img/catalog/products/origami-crane-tablet@2x.jpg 412,
+                                                              img/catalog/products/origami-crane-mobile@1x.jpg 130w,
+                                                              img/catalog/products/origami-crane-mobile@2x.jpg 260w"
+                      sizes="
+                                                              (min-width: 1024px) 270px,
+                                                              ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                              (min-width: 768px) 206px,
+                                                              ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                              (max-width: 767px) 130px,
+                                                              ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/origami-crane-desktop@1x.jpg" alt="Origami crane necklace">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Origami crane necklace</h3>
+                    <p>$ 105</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="products__item" href="#">
+                <div class="products__img-wrapper">
+                  <picture>
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/catalog/products/marble-earrings-mobile@1x.webp 1x, img/catalog/products/marble-earrings-mobile@2x.webp 2x">
+                    <!-- 1x  -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/catalog/products/marble-earrings-tablet@1x.webp 1x, img/catalog/products/marble-earrings-tablet@2x.webp 2x">
+                    <!-- 1x -->
+                    <source type="image/webp"
+                      srcset="img/catalog/products/marble-earrings-desktop@1x.webp 1x, img/catalog/products/marble-earrings-desktop@2x.webp 2x">
+                    <!-- mob   -->
+                    <img srcset="img/catalog/products/marble-earrings-desktop@1x.jpg 270w,
+                                                            img/catalog/products/marble-earrings-desktop@2x.jpg 540w,
+                                                            img/catalog/products/marble-earrings-tablet@1x.jpg 206w,
+                                                            img/catalog/products/dmarble-earrings-tablet@2x.jpg 412,
+                                                            img/catalog/products/marble-earrings-mobile@1x.jpg 130w,
+                                                            img/catalog/products/marble-earrings-mobile@2x.jpg 260w"
+                      sizes="
+                                                            (min-width: 1024px) 270px,
+                                                            ((min-width:1024px) and (min-resolution: 2dppx)) 540px,
+                                                            (min-width: 768px) 206px,
+                                                            ((min-width: 768px) and (min-resolution: 2dppx)) 412px,
+                                                            (max-width: 767px) 130px,
+                                                            ((max-width: 767px) and (min-resolution: 2dppx)) 260px"
+                      src="./img/catalog/products/marble-earrings-desktop@1x.jpg" alt="Marble earrings">
+                  </picture>
+                </div>
+                <div class="products__item-detail" href="#">
+                  <h4>Marble earrings</h3>
+                    <p>$ 95</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="products__pagination">
+            <a class="link products__pagination-link products__pagination-prev" href="#">Previous</a>
+            <ul class="product__pagination-list">
+              <li><a href="" class="product_pagination-link product_pagination-link--active">1</a></li>
+              <li><a href="" class="product_pagination-link"></a>2</li>
+              <li><a href="" class="product_pagination-link"></a>3</li>
+              <li><a href="" class="product_pagination-link"></a>4</li>
+              <li><a href="" class="product_pagination-link"></a>5</li>
+            </ul>
+            <a class="link products__pagination-link products__pagination-next" href="#">Next</a>
+          </div>
+        </section>
+      </div>
     </div>
 
   </main>

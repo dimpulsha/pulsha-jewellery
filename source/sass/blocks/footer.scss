@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 100px;
+  padding-top: 90px;
   background-color: $footer-background;
   color: $inversion-text;
   @media (max-width: $tablet-max-width) {
@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: calc(50% - 88px) auto max-content;
   column-gap: 88px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 
   @media (max-width: $desktop-middle-point) {
     grid-template-columns: calc(41% - 50px) auto max-content;
@@ -47,6 +47,8 @@
 .footer__info {
   display: flex;
   justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 5px;
   // justify-content: space-between;
   min-width: 320px;
 
@@ -70,6 +72,7 @@
 
 .footer__about {
   margin-left: 67px;
+
   @media (max-width: $desktop-middle-point) {
     margin-left: 35px;
   }
@@ -85,11 +88,13 @@
 }
 
 .footer__product-info li {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .footer__social {
+  margin-top: 5px;
   font-weight: 500;
+
   @media (max-width: $tablet-max-width) {
     justify-self: start;
   }
@@ -100,7 +105,7 @@
 }
 
 .footer__social li {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 0;

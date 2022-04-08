@@ -50,8 +50,8 @@
 
 .header_search {
   grid-area: a;
-  margin-top: 47px;
-  margin-bottom: 56px;
+  margin-top: 33px;
+  margin-bottom: 50px;
   justify-self: start;
   @media (max-width: $tablet-max-width) {
     display: none;
@@ -86,13 +86,25 @@
 
 .header__user-menu {
   grid-area: c;
-  margin-top: 47px;
+  margin-top: 42px;
 }
 
 .header__site-nav {
+  position: relative;
   grid-area: e;
   justify-self: center;
-  margin-left: -15px;
+  padding-top: 12px;
+  margin-left: -25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(calc(105% - 100vw) / 2);
+    width: 100vw;
+    height: 1px;
+    background-color: $header-decor-line;
+  }
 
   @media (max-width: $tablet-max-width) {
     display: none;

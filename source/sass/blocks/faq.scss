@@ -1,12 +1,14 @@
 .faq__question-list {
   max-width: 970px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .faq h3 {
   font-size: 18px;
   line-height: 23px;
   font-weight: 500;
+
   @media (max-width: $mobile-max-width) {
     font-size: 16px;
     line-height: 22px;
@@ -14,7 +16,7 @@
 }
 
 .faq li {
-  padding: 50px 50px 50px 38px;
+  padding: 44px 50px 42px 40px;
   border: 1px solid $accented-line;
 
   @media (max-width: $mobile-max-width) {
@@ -38,7 +40,8 @@
 .no-js .faq__answer,
 .accordeon-item--open .faq__answer {
   display: block;
-  margin-top: 20px;
+  margin-top: 7px;
+  padding-left: 10px;
   max-width: 527px;
 }
 
