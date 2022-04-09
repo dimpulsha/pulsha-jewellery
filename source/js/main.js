@@ -68,6 +68,13 @@ if (faqAccordeonButtons) {
   }
 }
 
+// главное меню
+const menuButton = document.querySelector('.header__menu-button');
+const page = document.querySelector('.page');
+menuButton.addEventListener('click', () => {
+  page.classList.toggle('page--menu-open');
+});
+
 // import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';
 

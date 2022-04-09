@@ -7,10 +7,16 @@
   }
 }
 
-.page--menu-open header,
 .no-js header {
   @media (max-width: $tablet-max-width) {
     background-color: $background-accented;
+  }
+}
+
+.page--menu-open header {
+  @media (max-width: $tablet-max-width) {
+    background-color: $background-accented;
+    height: 100vh;
   }
 }
 
@@ -44,6 +50,10 @@
 
     & use {
       stroke: currentColor;
+    }
+
+    &:hover use {
+      stroke: $icon-color-accented;
     }
   }
 }
