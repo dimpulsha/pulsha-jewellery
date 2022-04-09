@@ -13,16 +13,6 @@ new Swiper('.swiper', {
 
   slidesPerView: 4,
   spaceBetween: 30,
-
-  // pagination: {
-  //   el: '.slider__pagination',
-  //   type: 'bullets',
-  //   clickable: true,
-  //   renderBullet(index, className) {
-  //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-  //   },
-  // },
-
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -65,6 +55,18 @@ new Swiper('.swiper', {
     },
   },
 });
+
+// faq
+const faqAccordeonButtons = document.querySelectorAll('.faq__question-head button');
+
+if (faqAccordeonButtons) {
+  for (let i = 0; i < faqAccordeonButtons.length; i++) {
+    const parent = faqAccordeonButtons[i].closest('.accordeon-item');
+    faqAccordeonButtons[i].addEventListener('click', () => {
+      parent.classList.toggle('accordeon-item--open');
+    });
+  }
+}
 
 // import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';
