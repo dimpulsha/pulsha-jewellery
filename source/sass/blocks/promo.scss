@@ -62,13 +62,16 @@
 }
 
 .promo--index h1 {
-
   font-family: $secondary-font;
   font-size: 45px;
   line-height: 50px;
   font-weight: 700;
   color: $inversion-text;
   letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-max-width) {
+    padding-right: 15px;
+  }
 
   @media (max-width: $mobile-max-width) {
     font-size: 38px;
@@ -82,10 +85,12 @@
     line-height: 49px;
     font-weight: 400;
 
+    @media (max-width: $tablet-max-width) {
+      letter-spacing: normal;
+    }
     @media (max-width: $mobile-max-width) {
       font-size: 34px;
       line-height: 44px;
-      letter-spacing: normal;
     }
   }
 }

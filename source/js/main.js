@@ -1,60 +1,64 @@
 // import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+const sliderElement = document.querySelector('.swiper');
 
-const swiper =
-new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+if (sliderElement) {
 
-  navigation: {
-    nextEl: '.slider__arrows-item--next',
-    prevEl: '.slider__arrows-item--prew',
-  },
+  const swiper =
+    new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
 
-  slidesPerView: 4,
-  spaceBetween: 30,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.slider__pagination',
-        type: 'fraction',
-        // clickable: true,
-        renderFraction(currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-        },
+      navigation: {
+        nextEl: '.slider__arrows-item--next',
+        prevEl: '.slider__arrows-item--prew',
       },
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      pagination: {
-        el: '.slider__pagination',
-        type: 'bullets',
-        clickable: true,
-        renderBullet(index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-    },
-    1024: {
+
       slidesPerView: 4,
       spaceBetween: 30,
-      slidesPerGroup: 4,
-      pagination: {
-        el: '.slider__pagination',
-        type: 'bullets',
-        clickable: true,
-        renderBullet(index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 2,
+          pagination: {
+            el: '.slider__pagination',
+            type: 'fraction',
+            // clickable: true,
+            renderFraction(currentClass, totalClass) {
+              return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+            },
+          },
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesPerGroup: 2,
+          pagination: {
+            el: '.slider__pagination',
+            type: 'bullets',
+            clickable: true,
+            renderBullet(index, className) {
+              return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+          },
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          slidesPerGroup: 4,
+          pagination: {
+            el: '.slider__pagination',
+            type: 'bullets',
+            clickable: true,
+            renderBullet(index, className) {
+              return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+          },
         },
       },
-    },
-  },
-});
+    });
+}
 
 // faq
 const faqAccordeonButtons = document.querySelectorAll('.faq__question-head button');
@@ -71,9 +75,11 @@ if (faqAccordeonButtons) {
 // главное меню
 const menuButton = document.querySelector('.header__menu-button');
 const page = document.querySelector('.page');
-menuButton.addEventListener('click', () => {
-  page.classList.toggle('page--menu-open');
-});
+if (menuButton) {
+  menuButton.addEventListener('click', () => {
+    page.classList.toggle('page--menu-open');
+  });
+}
 
 // import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';

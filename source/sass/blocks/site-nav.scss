@@ -13,8 +13,9 @@
 
 .site-nav__list li {
   margin-left: 35px;
+
   @media (max-width: $tablet-max-width) {
     margin-left: 0;
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 }

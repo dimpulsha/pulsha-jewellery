@@ -1,6 +1,6 @@
 .header {
   @media (max-width: $tablet-max-width) {
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
   }
   @media (max-width: $mobile-max-width) {
     padding-bottom: 50px;
@@ -47,14 +47,22 @@
     grid-area: a;
     justify-self: start;
     align-self: center;
+    margin-top: 8px;
+  }
+}
 
-    & use {
-      stroke: currentColor;
-    }
+.header__menu-icon {
+  stroke: currentColor;
 
-    &:hover use {
-      stroke: $icon-color-accented;
-    }
+  &:hover {
+    stroke: $icon-color-accented;
+  }
+}
+
+.no-js .header__menu-icon,
+.page--menu-open .header__menu-icon {
+  &:hover {
+    stroke: $icon-color;
   }
 }
 
@@ -73,7 +81,8 @@
   @media (max-width: $tablet-max-width) {
     display: flex;
     grid-area: d;
-    margin-top: 0;
+    margin-top: 15px;
+    margin-bottom: 35px;
   }
 }
 
@@ -97,6 +106,9 @@
 .header__user-menu {
   grid-area: c;
   margin-top: 42px;
+  @media (max-width: $tablet-max-width) {
+    margin-top: 54px;
+  }
 }
 
 .header__site-nav {
@@ -123,6 +135,10 @@
 
 .page--menu-open .header__site-nav,
 .no-js .header__site-nav {
+  &::before {
+    display: none;
+  }
+
   @media (max-width: $tablet-max-width) {
     display: flex;
     justify-self: start;

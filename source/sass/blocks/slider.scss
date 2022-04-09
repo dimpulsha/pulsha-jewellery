@@ -48,6 +48,10 @@
   justify-content: center;
   margin-top: 50px;
   margin-left: -15px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 42px;
+  }
   // margin: 0 auto;
 }
 
