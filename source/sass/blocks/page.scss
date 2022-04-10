@@ -10,7 +10,7 @@
   color: $text;
 }
 
-.page.page--menu-open {
+.page.page--menu-open, .page.page--filter-open  {
   @media (max-width: $tablet-max-width) {
     height: 100vh;
     overflow: hidden;

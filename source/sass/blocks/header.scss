@@ -27,6 +27,7 @@
 .no-js .header__container {
   @media (max-width: $tablet-max-width) {
     color: $inversion-text;
+    padding-bottom: 50px;
   }
 }
 
@@ -99,7 +100,8 @@
 
 .header__logo-icon {
   fill: $accented-logo;
-
+  width: 66px;
+  height: 66px;
   @media (max-width: $mobile-max-width) {
     width: 52px;
     height: 52px;

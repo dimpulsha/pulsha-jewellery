@@ -1,4 +1,3 @@
-
 .no-js .filter-form__close-button {
   display: none;
 }
@@ -18,6 +17,33 @@
   }
 }
 
+.page--filter-open .filter-form {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-inversion;
+  overflow: auto;
+}
+
+.page--filter-open .filter-form__close-icon {
+  position: absolute;
+  right: -16px;
+  top: -16px;
+}
+
+.page--filter-open .filter-form__body {
+  // border: 1px solid black;
+  position: relative;
+  @media (max-width: $tablet-max-width) {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 422px;
+  }
+}
+
 .filter-form__fieldsets {
   margin-bottom: 30px;
 }
@@ -32,7 +58,17 @@
   }
 }
 
-.no-js .filter-form fieldset {
+.filter-form__fieldset-icon {
+  transform: rotate(180deg);
+}
+
+.no-js .filter-form__fieldset-icon,
+.filter-form__fieldset--open .filter-form__fieldset-icon {
+  transform: rotate(0deg);
+}
+
+.no-js .filter-form fieldset,
+.page--filter-open .filter-form fieldset {
   border: none;
   border-bottom: 1px solid $accented-line;
 }
@@ -45,11 +81,17 @@
 }
 
 .filter-form__input-list {
+  display: none;
   margin-top: 30px;
   padding-left: 35px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.no-js .filter-form__input-list,
+.filter-form__fieldset--open .filter-form__input-list {
+  display: block;
 }
 
 .filter-form__input-item:not(:last-child) {
@@ -100,7 +142,6 @@ input[type="checkbox"]:checked + label {
 .filter-form__range {
   height: 1px;
   position: relative;
-  // margin-bottom: 7px;
 }
 
 .filter-form__total-line {
@@ -146,14 +187,6 @@ input[type="number"] {
   line-height: 18px;
   font-weight: 500;
 }
-
-// .filter-form__range-toggle {
-//   position: absolute;
-//   display: flex;
-//   width: 35px;
-//   flex-direction: column;
-//   align-items: center;
-// }
 
 .filter-form__range-field {
   margin-top: 10px;

@@ -47,7 +47,7 @@
           </button>
         </form>
         <a class="header__logo" href="index.html">
-          <svg class="header__logo-icon" width="66" height="66" viewbox="0 0 66 66">
+          <svg class="header__logo-icon" viewbox="0 0 66 66">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
@@ -93,16 +93,15 @@
           <h3>Catalog filter</h3>
           <form class="filter-form catalog__filter-form" name="catalog-filter" action="https://echo.htmlacademy.ru"
             method="get">
-            <button class="filter-form__close-button button" type="button"><span class="visually-hidden">Close
-                filter</span>
-              <!-- <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
-                <use xlink:href="img/sprite_auto.svg#icon-up"></use>
-              </svg> -->
-            </button>
             <div class="filter-form__body">
-              <div class="filter-form__fieldsets">
-                <fieldset>
-                  <!-- <div class="filter-form__fieldset-control"> -->
+              <button class="filter-form__close-button button" type="button"><span class="visually-hidden">Close filter</span>
+                <svg class="filter-form__close-icon" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                  <use xlink:href="img/sprite_auto.svg#icon-filter-close"></use>
+                </svg>
+              </button>
+              <!-- filter-form__fieldsets--open -->
+              <div class="filter-form__fieldsets ">
+                <fieldset class="filter-form__fieldset--open">
                   <button class="filter-form__fieldset-control button" type="button"><span>Product</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
@@ -126,12 +125,10 @@
                       <label for="earrings-id">Earrings</label>
                     </div>
                   </div>
-                  <!-- </div> -->
                 </fieldset>
                 <fieldset>
-                  <!-- <div class="filter-form__fieldset-control"> -->
                   <button class="filter-form__fieldset-control button" type="button"><span>Material</span>
-                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                    <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
                     </svg>
                   </button>
@@ -154,7 +151,7 @@
                 <fieldset>
                   <!-- <div class="filter-form__fieldset-control"> -->
                   <button class="filter-form__fieldset-control button" type="button"><span>Collection</span>
-                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                    <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
                     </svg>
                   </button>
@@ -177,7 +174,7 @@
                 <fieldset>
                   <!-- <div class="filter-form__fieldset-control"> -->
                   <button class="filter-form__fieldset-control button" type="button"><span>Price</span>
-                    <svg class="faq_accordeon-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
+                    <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
                     </svg>
                   </button>
@@ -643,11 +640,11 @@
           <div class="products__pagination">
             <a class="link products__pagination-link products__pagination-prev" href="#">Previous</a>
             <ul class="product__pagination-list">
-              <li><a href="" class="product_pagination-link product_pagination-link--active">1</a></li>
-              <li><a href="" class="product_pagination-link"></a>2</li>
-              <li><a href="" class="product_pagination-link"></a>3</li>
-              <li><a href="" class="product_pagination-link"></a>4</li>
-              <li><a href="" class="product_pagination-link"></a>5</li>
+              <li><a href="#" class="product_pagination-link product_pagination-link--active">1</a></li>
+              <li><a href="#" class="product_pagination-link">2</a></li>
+              <li><a href="#" class="product_pagination-link">3</a></li>
+              <li><a href="#" class="product_pagination-link">4</a></li>
+              <li><a href="#" class="product_pagination-link">5</a></li>
             </ul>
             <a class="link products__pagination-link products__pagination-next" href="#">Next</a>
           </div>
@@ -689,7 +686,8 @@
         <ul class="footer__social">
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="user-menu__cart-icon" width="8" height="15" viewbox="0 0 8 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--fb" width="8" height="15" viewbox="0 0 8 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
               </svg>
               <span>Facebook</span>
@@ -697,7 +695,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="user-menu__cart-icon" width="15" height="15" viewbox="0 0 15 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--ig" width="15" height="15" viewbox="0 0 15 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
               </svg>
               <span>Instagram</span>
@@ -705,7 +704,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="user-menu__cart-icon" width="15" height="15" viewbox="0 0 15 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--pinterest" width="15" height="15" viewbox="0 0 15 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
               </svg>
               <span>Pinterest</span>
@@ -713,7 +713,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="user-menu__cart-icon" width="15" height="13" viewbox="0 0 15 13" fill="none">
+              <svg class="footer__social-icon footer__social-icon-twitter" width="15" height="13" viewbox="0 0 15 13"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-tw">
                 </use>
               </svg>

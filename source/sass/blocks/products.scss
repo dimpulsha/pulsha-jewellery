@@ -19,6 +19,17 @@
   text-align: center;
 }
 
+.products__item:hover {
+  h4 {
+    color: $accented-text;
+    text-decoration: underline;
+  }
+
+  p {
+    color: $accented-text;
+  }
+}
+
 .products__item img {
   width: 100%;
 }
@@ -53,6 +64,7 @@
 }
 
 .products__pagination-prev {
+  justify-self: start;
   @media (max-width: $mobile-max-width) {
     display: none;
   }

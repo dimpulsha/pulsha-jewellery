@@ -60,26 +60,76 @@ if (sliderElement) {
     });
 }
 
+const isEscKey = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
+
 // faq
 const faqAccordeonButtons = document.querySelectorAll('.faq__question-head button');
 
 if (faqAccordeonButtons) {
-  for (let i = 0; i < faqAccordeonButtons.length; i++) {
-    const parent = faqAccordeonButtons[i].closest('.accordeon-item');
-    faqAccordeonButtons[i].addEventListener('click', () => {
+  faqAccordeonButtons.forEach((element) => {
+    const parent = element.closest('.accordeon-item');
+    element.addEventListener('click', () => {
       parent.classList.toggle('accordeon-item--open');
     });
   }
+  );
 }
 
 // главное меню
 const menuButton = document.querySelector('.header__menu-button');
 const page = document.querySelector('.page');
+
+const removeFilterClass = () => {
+  page.classList.remove('page--filter-open');
+};
+
 if (menuButton) {
   menuButton.addEventListener('click', () => {
     page.classList.toggle('page--menu-open');
   });
 }
+
+const onEscCloseFilter = (evt) => {
+  if (isEscKey(evt)) {
+    evt.preventDefault();
+    removeFilterClass();
+  }
+};
+
+// фильтр
+const filter = document.querySelector('.filter-form');
+const catalogControl = document.querySelector('.catalog__filter-control');
+
+if (filter) {
+  const fieldsetControl = filter.querySelectorAll('.filter-form__fieldset-control');
+  const filterCloseButton = filter.querySelector('.filter-form__close-button');
+
+  if (catalogControl) {
+    catalogControl.addEventListener('click', () => {
+      page.classList.add('page--filter-open');
+      document.addEventListener('keydown', onEscCloseFilter);
+    });
+  }
+
+  if (fieldsetControl) {
+    fieldsetControl.forEach((element) => {
+      const parent = element.closest('fieldset');
+      element.addEventListener('click', () => {
+        parent.classList.toggle('filter-form__fieldset--open');
+      });
+    });
+  }
+
+  if (filterCloseButton) {
+    filterCloseButton.addEventListener('click', () => {
+      page.classList.remove('page--filter-open');
+      document.removeEventListener('keydown', onEscCloseFilter);
+    });
+  }
+}
+
+// отображение фильтра
+// console.log(filterCloseButton);
 
 // import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';
