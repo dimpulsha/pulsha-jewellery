@@ -1,5 +1,14 @@
-.no-js .filter-form__close-button {
+.filter-form__close-button {
   display: none;
+}
+
+.page--filter-open .filter-form__close-button {
+  @media (max-width: $tablet-max-width) {
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+  }
 }
 
 // показ формы здесь
@@ -50,7 +59,7 @@
 
 .filter-form fieldset {
   margin: 0;
-  padding: 28px 25px;
+  padding: 25px 25px 24px 24px;
   border: 1px solid $accented-line;
 
   &:not(:first-child) {
@@ -82,7 +91,7 @@
 
 .filter-form__input-list {
   display: none;
-  margin-top: 30px;
+  margin-top: 25px;
   padding-left: 35px;
   font-size: 14px;
   line-height: 18px;
@@ -95,7 +104,7 @@
 }
 
 .filter-form__input-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .filter-form__input-list--range {
@@ -178,7 +187,7 @@ input[type="checkbox"]:checked + label {
 }
 
 .filter-form__range-toggle--max {
-  left: 135px;
+  left: 150px;
 }
 
 input[type="number"] {
@@ -189,7 +198,7 @@ input[type="number"] {
 }
 
 .filter-form__range-field {
-  margin-top: 10px;
+  margin-top: 12px;
   display: grid;
   grid-template-columns: 99px 99px;
 }

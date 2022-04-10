@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
-  row-gap: 40px;
-  margin-bottom: 40px;
+  row-gap: 39px;
+  margin-bottom: 30px;
 
   @media (max-width: $mobile-max-width) {
     grid-template-columns: 1fr 1fr;
@@ -39,8 +39,8 @@
 }
 
 .products__item-detail h4 {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 500;
@@ -87,9 +87,9 @@
 
 .product__pagination-list {
   display: flex;
-  margin-left: -15px;
+  margin-left: -14px;
 }
 
 .product__pagination-list li {
-  margin-left: 15px;
+  margin-left: 14px;
 }
