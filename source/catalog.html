@@ -94,7 +94,8 @@
           <form class="filter-form catalog__filter-form" name="catalog-filter" action="https://echo.htmlacademy.ru"
             method="get">
             <div class="filter-form__body">
-              <button class="filter-form__close-button button" type="button"><span class="visually-hidden">Close filter</span>
+              <button class="filter-form__close-button button" type="button"><span class="visually-hidden">Close
+                  filter</span>
                 <svg class="filter-form__close-icon" width="32" height="32" viewbox="0 0 32 32" fill="none">
                   <use xlink:href="img/sprite_auto.svg#icon-filter-close"></use>
                 </svg>
@@ -141,16 +142,13 @@
                       <input type="checkbox" name="silver" id="silver-id" checked>
                       <label for="silver-id">Silver</label>
                     </div>
-                    <div class="filter-form__input-item">
-                      <input type="checkbox" name="platinum" id="platinum-id">
-                      <label for="platinum-id">Rings</label>
-                    </div>
                   </div>
                   <!-- </div> -->
                 </fieldset>
                 <fieldset>
                   <!-- <div class="filter-form__fieldset-control"> -->
-                  <button class="filter-form__fieldset-control button" type="button"><span>Collection</span>
+                  <button class="filter-form__fieldset-control filter-form__fieldset-control--collection button"
+                    type="button"><span>Collection</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
                     </svg>
@@ -185,22 +183,19 @@
                       <div class="filter-form__range-toggle filter-form__range-toggle--min" tabindex="0"></div>
                       <div class="filter-form__range-toggle filter-form__range-toggle--max" tabindex="0"></div>
                     </div>
-                    <!-- <div class="filter-form__range-toggle filter-form__range-toggle--min" tabindex="0"> -->
                     <div class="filter-form__range-field">
-                      <label for="min-price-id">$&nbsp;
+                      <label for="min-price-id"><span class="visually-hidden">Min price</span>$&nbsp;
                         <input type="number" id="min-price-id" name="min-price" value="55" required></label>
-                      <!-- </div> -->
-                      <!-- <div class="filter-form__range-toggle filter-form__range-toggle--max" tabindex="0"> -->
-                      <!-- <div class="filter-form__range-point"></div> -->
-                      <label for="max-price-id">$&nbsp;
+                      <label for="max-price-id"><span class="visually-hidden">Max price</span>$&nbsp;
                         <input type="number" id="max-price-id" name="max-price" value="155" required></label>
-                      <!-- </div> -->
                     </div>
                   </div>
                 </fieldset>
               </div>
-              <button class="filter-form__button button button--fill" type="submit">Apply</button>
-              <button class="filter-form__button button button--clean" type="reset">Clear All</button>
+              <div class="filter-form__buttons">
+                <button class="filter-form__button button button--fill" type="submit">Apply</button>
+                <button class="filter-form__button button button--clean" type="reset">Clear All</button>
+              </div>
             </div>
           </form>
         </section>

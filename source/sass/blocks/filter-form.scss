@@ -6,8 +6,8 @@
   @media (max-width: $tablet-max-width) {
     display: block;
     position: absolute;
-    right: -16px;
-    top: -16px;
+    right: -25px;
+    top: -20px;
   }
 }
 
@@ -35,12 +35,13 @@
   height: 100vh;
   background-color: $background-inversion;
   overflow: auto;
+  // padding: 0 25px;
 }
 
 .page--filter-open .filter-form__close-icon {
   position: absolute;
-  right: -16px;
-  top: -16px;
+  right: 0;
+  top: 0;
 }
 
 .page--filter-open .filter-form__body {
@@ -48,19 +49,27 @@
   position: relative;
   @media (max-width: $tablet-max-width) {
     margin: 0 auto;
-    margin-top: 50px;
-    width: 422px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 422px;
   }
 }
 
 .filter-form__fieldsets {
   margin-bottom: 30px;
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .filter-form fieldset {
   margin: 0;
   padding: 25px 25px 24px 24px;
   border: 1px solid $accented-line;
+
+  @media (max-width: $tablet-max-width) {
+    padding:34px 35px 36px 28px;
+  }
 
   &:not(:first-child) {
     border-top: none;
@@ -87,6 +96,17 @@
   display: flex;
   justify-content: space-between;
   font-weight: 500;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.filter-form__fieldset-control--collection {
+  @media (max-width: $tablet-max-width) {
+    margin-top: -2px;
+  }
 }
 
 .filter-form__input-list {
@@ -96,6 +116,22 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.filter-form__input-list--range {
+  position: relative;
+  padding-left: 0;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 30px;
+    padding-left: 0;
+  }
 }
 
 .no-js .filter-form__input-list,
@@ -105,11 +141,10 @@
 
 .filter-form__input-item:not(:last-child) {
   margin-bottom: 12px;
-}
 
-.filter-form__input-list--range {
-  position: relative;
-  padding-left: 0;
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .filter-form__input-item input[type="checkbox"] {
@@ -128,6 +163,14 @@ input[type="checkbox"] + label {
     height: 15px;
     left: -25px;
     border: 1px solid $accented-line;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    &::before {
+      width: 18px;
+      height: 18px;
+      left: -30px;
+    }
   }
 
   &:hover,
@@ -167,8 +210,8 @@ input[type="checkbox"]:checked + label {
   position: absolute;
   content: "";
   top: 0;
-  left: 60px;
-  width: 90px;
+  left: 65px;
+  width: 180px;
   height: 1px;
   border-top: 1px solid $accented-line;
 }
@@ -180,14 +223,26 @@ input[type="checkbox"]:checked + label {
   height: 15px;
   border-radius: 50%;
   background-color: $background-accented;
+
+  @media (max-width: $tablet-max-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filter-form__range-toggle--min {
   left: 45px;
+
+  @media (max-width: $tablet-max-width) {
+    left: 55px;
+  }
 }
 
 .filter-form__range-toggle--max {
   left: 150px;
+  @media (max-width: $tablet-max-width) {
+    left: 230px;
+  }
 }
 
 input[type="number"] {
@@ -195,12 +250,22 @@ input[type="number"] {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .filter-form__range-field {
   margin-top: 12px;
   display: grid;
   grid-template-columns: 99px 99px;
+  @media (max-width: $tablet-max-width) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    // column-gap: 70px;
+  }
 }
 
 .filter-form__range-field label {
@@ -208,12 +273,30 @@ input[type="number"] {
   display: inline-flex;
   align-items: center;
   padding-left: 38px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 40px;
+  }
 }
 
 .filter-form__range-field input {
   width: 60px;
 }
 
+.filter-form__buttons {
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .filter-form__button {
   margin-bottom: 25px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 362px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
