@@ -137,6 +137,11 @@
 
 .page__section--catalog {
   margin-bottom: 80px;
+
+  @media (max-width: $tablet-max-width) {
+  margin-bottom: 50px;
+
+  }
 }
 
 .page__catalog {
