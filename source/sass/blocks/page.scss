@@ -10,7 +10,8 @@
   color: $text;
 }
 
-.page.page--menu-open, .page.page--filter-open  {
+.page.page--menu-open,
+.page.page--filter-open {
   @media (max-width: $tablet-max-width) {
     height: 100vh;
     overflow: hidden;
@@ -92,9 +93,8 @@
   }
 
   @media (max-width: $mobile-max-width) {
-  padding-top: 0;
+    padding-top: 0;
     margin-bottom: 72px;
-
   }
 }
 
@@ -139,11 +139,17 @@
   margin-bottom: 80px;
 
   @media (max-width: $tablet-max-width) {
-  margin-bottom: 50px;
-
+    margin-bottom: 50px;
+  }
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 40px;
   }
 }
 
 .page__catalog {
   margin-bottom: 75px;
+  
+  @media (max-width: $mobile-max-width) {
+  margin-bottom: 65px;
+  }
 }

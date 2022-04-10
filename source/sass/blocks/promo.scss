@@ -103,10 +103,15 @@
   line-height: 38px;
   color: $inversion-text;
 
+  @media (max-width: $mobile-max-width) {
+    padding-top: 10px;
+    line-height: 34px;
+  }
+
   & span {
     font-style: italic;
     font-size: 22px;
-    line-height: 29px;
+    line-height: 22px;
     font-weight: 400;
   }
 }
