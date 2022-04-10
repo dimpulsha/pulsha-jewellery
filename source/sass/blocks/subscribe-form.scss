@@ -12,19 +12,30 @@
   }
 }
 .subscribe-form h2 {
-  // margin-top: 10px;
   margin-bottom: 10px;
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
   letter-spacing: 0.03em;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-middle-point) {
+    width: 220px;
+  }
 }
 
 .subscribe-form p {
   margin-bottom: 33px;
   font-weight: 400;
   color: $inactive-text;
+
+  @media (max-width: $mobile-middle-point) {
+    width: 230px;
+  }
 }
 
 .subscribe-form input[type="email"] {
@@ -61,6 +72,10 @@
   border: none;
   color: currentColor;
   cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    margin-left: 10px;
+  }
 }
 
 .subscribe-form__body {

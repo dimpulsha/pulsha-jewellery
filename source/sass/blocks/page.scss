@@ -38,8 +38,13 @@
 
 .page__header {
   margin-bottom: 17px;
+
   @media (max-width: $tablet-max-width) {
     margin-bottom: 6px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -50,7 +55,7 @@
     margin-bottom: 68px;
   }
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -74,7 +79,7 @@
 
 .page__section--slider h2 {
   margin-bottom: 0;
-   @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) {
     letter-spacing: normal;
   }
 }
@@ -82,25 +87,37 @@
 .page__section--follow {
   padding-top: 10px;
 
-   @media (max-width: $tablet-max-width) {
-     margin-bottom: 80px;
-   }
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+  padding-top: 0;
+    margin-bottom: 72px;
+
+  }
 }
 
 .page__section--follow h2 {
   margin-bottom: 30px;
-   @media (max-width: $tablet-max-width) {
-  margin-bottom: 15px;
-
-   }
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 15px;
+  }
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .page__section-head-link {
   margin-bottom: 64px;
   font-weight: 500;
-  @media (max-width: $tablet-max-width) {
-  margin-bottom: 65px;
 
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -111,5 +128,9 @@
   @media (max-width: $tablet-max-width) {
     margin-top: 10px;
     margin-bottom: 55px;
+  }
+  @media (max-width: $mobile-max-width) {
+    margin-top: 18px;
+    margin-bottom: 45px;
   }
 }

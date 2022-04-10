@@ -74,9 +74,11 @@
   }
 
   @media (max-width: $mobile-max-width) {
+    padding-top: 5px;
+    padding-left: 15px;
     font-size: 38px;
-    line-height: 49px;
-    letter-spacing: normal;
+    line-height: 38px;
+    // letter-spacing: normal;
   }
 
   & span {
