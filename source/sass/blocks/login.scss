@@ -6,12 +6,12 @@
   @include visually-hidden;
 }
 
-.login__wrapper {
+.login {
   display: none;
   background-color: $background-inversion;
 }
 
-.page__login-popup--open .login__wrapper {
+.page__login-popup--open .login {
   display: flex;
   justify-content: center;
   align-items: center;

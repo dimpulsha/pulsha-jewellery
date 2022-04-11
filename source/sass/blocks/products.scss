@@ -74,6 +74,13 @@
 
 .products__pagination-prev {
   justify-self: start;
+  color: $text;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: $accented-text;
+  }
 
   @media (max-width: $mobile-max-width) {
     display: none;
@@ -93,6 +100,13 @@
 
 .products__pagination-next {
   justify-self: end;
+  font-weight: 500;
+  color: $text;
+
+  &:hover,
+  &:focus {
+    color: $accented-text;
+  }
 
   @media (max-width: $mobile-max-width) {
     display: none;
@@ -105,6 +119,11 @@
   @media (max-width: $mobile-max-width) {
     margin-left: 24px;
   }
+}
+
+.products__pagination-link {
+  font-weight: 500;
+  color: $inactive-text;
 }
 
 .products__pagination-link--active {
