@@ -83,12 +83,12 @@
   }
 }
 
-.faq_accordeon-icon {
+.faq__accordeon-icon {
   transform: rotate(180deg);
 }
 
-.no-js .faq_accordeon-icon,
-.accordeon-item--open .faq_accordeon-icon {
+.no-js .faq__accordeon-icon,
+.accordeon-item--open .faq__accordeon-icon {
   transform: rotate(0deg);
 }
 

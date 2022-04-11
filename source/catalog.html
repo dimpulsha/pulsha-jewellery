@@ -40,7 +40,7 @@
             <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
           </svg>
         </button>
-        <form class="header_search search-form" name="search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="header__search search-form" name="search" action="https://echo.htmlacademy.ru" method="post">
           <input type="text" placeholder="Type here to search" required>
           <button type="submit"><span class="visually-hidden">Search</span>
             <svg width="14" height="14" viewbox="0 0 14 14">
@@ -105,7 +105,7 @@
 
               <div class="filter-form__fieldsets ">
                 <!-- filter-form__fieldsets--open  - открытый список фильтра -->
-                <fieldset class="filter-form__fieldset--open">
+                <fieldset class="filter-form__fieldset filter-form__fieldset--open">
                   <button class="filter-form__fieldset-control button" type="button"><span>Product</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
@@ -131,7 +131,7 @@
                   </div>
                 </fieldset>
                 <!-- filter-form__fieldsets--open  - открытый список фильтра -->
-                <fieldset>
+                <fieldset class="filter-form__fieldset">
                   <button class="filter-form__fieldset-control button" type="button"><span>Material</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
@@ -149,7 +149,7 @@
                   </div>
                 </fieldset>
                 <!-- filter-form__fieldsets--open  - открытый список фильтра -->
-                <fieldset>
+                <fieldset class="filter-form__fieldset">
                   <button class="filter-form__fieldset-control filter-form__fieldset-control--collection button"
                     type="button"><span>Collection</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
@@ -168,7 +168,7 @@
                   </div>
                 </fieldset>
                 <!-- filter-form__fieldsets--open  - открытый список фильтра -->
-                <fieldset class="filter-form__fieldset--open">
+                <fieldset class="filter-form__fieldset filter-form__fieldset--open">
                   <button class="filter-form__fieldset-control button" type="button"><span>Price</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
@@ -632,12 +632,12 @@
           </ul>
           <div class="products__pagination">
             <a class="link products__pagination-link products__pagination-prev" href="#">Previous</a>
-            <ul class="product__pagination-list">
-              <li><a href="#" class="product_pagination-link product_pagination-link--active">1</a></li>
-              <li><a href="#" class="product_pagination-link">2</a></li>
-              <li><a href="#" class="product_pagination-link">3</a></li>
-              <li><a href="#" class="product_pagination-link">4</a></li>
-              <li><a href="#" class="product_pagination-link">5</a></li>
+            <ul class="products__pagination-list">
+              <li><a href="#" class="products__pagination-link products__pagination-link--active">1</a></li>
+              <li><a href="#" class="products__pagination-link">2</a></li>
+              <li><a href="#" class="products__pagination-link">3</a></li>
+              <li><a href="#" class="products__pagination-link">4</a></li>
+              <li><a href="#" class="products__pagination-link">5</a></li>
             </ul>
             <a class="link products__pagination-link products__pagination-next" href="#">Next</a>
           </div>
@@ -646,7 +646,7 @@
     </div>
 
   </main>
-  <footer class="page_footer footer">
+  <footer class="footer">
     <div class="page__wrapper">
       <div class="footer-content">
         <form class="footer__subscribe-form subscribe-form" name="subscribe" action="https://echo.htmlacademy.ru"
@@ -718,7 +718,7 @@
       </div>
     </div>
   </footer>
-  <div class="login__wrapper" id="login-popup">
+  <div class="login" id="login-popup">
     <div class="login__content login__content--modal">
       <div class="login__deco-img"></div>
       <button class="button login__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>

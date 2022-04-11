@@ -62,7 +62,7 @@
   }
 }
 
-.header_search {
+.header__search {
   grid-area: a;
   margin-top: 33px;
   margin-bottom: 50px;
@@ -73,8 +73,8 @@
   }
 }
 
-.page--menu-open .header_search,
-.no-js .header_search {
+.page--menu-open .header__search,
+.no-js .header__search {
   @media (max-width: $tablet-max-width) {
     display: flex;
     grid-area: d;

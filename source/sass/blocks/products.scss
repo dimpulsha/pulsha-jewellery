@@ -80,7 +80,7 @@
   }
 }
 
-.product__pagination-list {
+.products__pagination-list {
   display: flex;
   justify-self: center;
   margin-left: -14px;
@@ -99,10 +99,14 @@
   }
 }
 
-.product__pagination-list li {
+.products__pagination-list li {
   margin-left: 14px;
 
   @media (max-width: $mobile-max-width) {
     margin-left: 24px;
   }
+}
+
+.products__pagination-link--active {
+  color: $text;
 }
