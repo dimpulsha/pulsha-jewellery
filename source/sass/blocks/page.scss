@@ -18,6 +18,11 @@
   }
 }
 
+.page.page__login-popup--open {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .page__wrapper {
   margin: 0 auto;
   padding: 0 98px;
@@ -148,8 +153,8 @@
 
 .page__catalog {
   margin-bottom: 75px;
-  
+
   @media (max-width: $mobile-max-width) {
-  margin-bottom: 65px;
+    margin-bottom: 65px;
   }
 }

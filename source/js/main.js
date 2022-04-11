@@ -1,6 +1,5 @@
-// import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+// слайдер
 const sliderElement = document.querySelector('.swiper');
-
 if (sliderElement) {
 
   const swiper =
@@ -128,52 +127,74 @@ if (filter) {
   }
 }
 
-// отображение фильтра
-// console.log(filterCloseButton);
+// модалка логина и localStorage
 
-// import {iosVhFix} from './utils/ios-vh-fix';
-// import {initModals} from './modules/modals/init-modals';
+const userInfo = {
+  userEmail: '',
+};
 
-// ---------------------------------
+const testStorage = () => {
+  try {
+    userInfo.userEmail = localStorage.getItem('email');
+    return true;
+  } catch (err) {
+    return false;
+  }
+};
 
-// window.addEventListener('DOMContentLoaded', () => {
+const saveData = (form) => {
+  localStorage.setItem('email', form.querySelector('#email').value);
+};
 
-//   // Utils
-//   // ---------------------------------
+const loadData = (form) => {
+  if (testStorage()) {
+    form.querySelector('#email').value = userInfo.userEmail;
+  }
+};
 
-//   iosVhFix();
+const closePopupKey = (evt) => {
+  if (isEscKey(evt)) {
+    page.classList.remove('page__login-popup--open');
+    removeEventListener('click', closePopup);
+    removeEventListener('keydown', closePopupKey);
+  }
+};
 
-//   // Modules
-//   // ---------------------------------
+const closePopup = (evt) => {
+  const target = evt.target;
+  const loginForm = document.querySelector('.login__content');
+  const loginCloseButton = document.querySelector('.login__close-button');
+  const isForm = target === loginForm || loginForm.contains(target);
+  const isButton = target === loginCloseButton || loginCloseButton.contains(target);
 
-//   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-//   // в load следует добавить скрипты, не участвующие в работе первого экрана
-//   window.addEventListener('load', () => {
-//     initModals();
-//   });
-// });
+  if (!isForm || isButton) {
+    page.classList.remove('page__login-popup--open');
+    removeEventListener('click', closePopup);
+    removeEventListener('keydown', closePopupKey);
+  }
+};
 
-// ---------------------------------
+// const loginPopup = document.querySelector('#login-popup');
+const loginHeadLink = document.querySelectorAll('.menu-login');
 
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
+if (loginHeadLink) {
+  loginHeadLink.forEach((element) => {
+    element.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      page.classList.add('page__login-popup--open');
+      const loginPopup = document.querySelector('#login-popup');
+      const loginForm = loginPopup.querySelector('.login__form');
+      const formEmail = loginForm.querySelector('#email');
+      const loginSubmit = loginForm.querySelector('.login__submit-button');
 
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
+      loadData(loginForm);
+      formEmail.focus();
+      // console.log(loginForm);
+      const onLoginSubmit = () => saveData(loginForm);
 
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используейтся matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)
+      loginPopup.addEventListener('click', closePopup);
+      document.addEventListener('keydown', closePopupKey);
+      loginSubmit.addEventListener('click', onLoginSubmit);
+    });
+  });
+}

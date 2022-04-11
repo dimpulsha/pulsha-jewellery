@@ -27,8 +27,8 @@
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
-<body class="page wrapper">
+<!-- no-js  page__login-popup--open page--menu-open page--filter-open -->
+<body class="page wrapper ">
   <header class="page__header header">
     <div class="page__wrapper">
       <div class="header__container">
@@ -37,7 +37,7 @@
             <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
           </svg>
         </button>
-        <form class="header_search search-form" name="search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="header_search search-form" name="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" placeholder="Type here to search" required>
           <button type="submit"><span class="visually-hidden">Search</span>
             <svg width="14" height="14" viewbox="0 0 14 14">
@@ -46,13 +46,13 @@
           </button>
         </form>
         <a class="header__logo">
-          <svg class="header__logo-icon"  viewbox="0 0 66 66">
+          <svg class="header__logo-icon" viewbox="0 0 66 66">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
         <ul class="header__user-menu user-menu">
           <li>
-            <a class="user-menu__login login login--desktop link" href="#">Login</a>
+            <a class="user-menu__login menu-login menu-login--desktop link" href="#">Login</a>
           </li>
           <li>
             <a href="#" class="link link--icon user-menu__cart">
@@ -77,7 +77,7 @@
           <li><a href="#" class="link">Stores & Hours</a></li>
           <li><a href="#" class="link">Contact Us</a></li>
         </ul>
-        <a class="header__login-mobile login login--mobile" href="#">Login</a>
+        <a class="header__login-mobile menu-login menu-login--mobile" href="#">Login</a>
       </div>
     </div>
   </header>
@@ -906,7 +906,8 @@
         <ul class="footer__social">
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="footer__social-icon footer__social-icon--fb" width="8" height="15" viewbox="0 0 8 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--fb" width="8" height="15" viewbox="0 0 8 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
               </svg>
               <span>Facebook</span>
@@ -914,7 +915,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="footer__social-icon footer__social-icon--ig" width="15" height="15" viewbox="0 0 15 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--ig" width="15" height="15" viewbox="0 0 15 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
               </svg>
               <span>Instagram</span>
@@ -922,7 +924,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="footer__social-icon footer__social-icon--pinterest" width="15" height="15" viewbox="0 0 15 15" fill="none">
+              <svg class="footer__social-icon footer__social-icon--pinterest" width="15" height="15" viewbox="0 0 15 15"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
               </svg>
               <span>Pinterest</span>
@@ -930,7 +933,8 @@
           </li>
           <li>
             <a href="#" class="footer__social-link link">
-              <svg class="footer__social-icon footer__social-icon-twitter" width="15" height="13" viewbox="0 0 15 13" fill="none">
+              <svg class="footer__social-icon footer__social-icon-twitter" width="15" height="13" viewbox="0 0 15 13"
+                fill="none">
                 <use xlink:href="img/sprite_auto.svg#icon-tw">
                 </use>
               </svg>
@@ -941,9 +945,30 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="./js/vendor.min.js"></script> -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.min.js"></script>
+  <div class="login__wrapper" id="login-popup">
+    <div class="login__content login__content--modal">
+      <div class="login__deco-img"></div>
+      <button class="button login__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>
+        <svg class="login__close-icon" width="14" height="14" viewbox="0 0 14 14" fill="none">
+          <use xlink:href="img/sprite_auto.svg#icon-cross">
+          </use>
+        </svg>
+      </button>
+      <form class="login__form" name="login-form"  action="https://echo.htmlacademy.ru" method="post" autocomplete="off" >
+        <h2>Log In</h2>
+        <label class="login__form-label">
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+        </label>
+        <label class="login__form-label">
+          <input type="password" name="password" id="email" placeholder="Password" required>
+        </label>
+        <a class="login__fogot-link link" href="#">Forgot your password?</a>
+        <button class="login__submit-button button button--fill" type="submit">Log In</button>
+        <p>Don’t have an account? <a class="login__sign-link link" href="#">Sign up</a></p>
+      </form>
+    </div>
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>
