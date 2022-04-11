@@ -26,7 +26,10 @@
   <link rel="preload" href="fonts/Poppins-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<!-- no-js -->
+<!-- no-js
+   page__login-popup--open
+   page--menu-open
+   page--filter-open -->
 
 <body class="page wrapper">
   <header class="page__header header">
@@ -99,8 +102,9 @@
                   <use xlink:href="img/sprite_auto.svg#icon-filter-close"></use>
                 </svg>
               </button>
-              <!-- filter-form__fieldsets--open -->
+
               <div class="filter-form__fieldsets ">
+                <!-- filter-form__fieldsets--open  - открытый список фильтра -->
                 <fieldset class="filter-form__fieldset--open">
                   <button class="filter-form__fieldset-control button" type="button"><span>Product</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
@@ -126,6 +130,7 @@
                     </div>
                   </div>
                 </fieldset>
+                <!-- filter-form__fieldsets--open  - открытый список фильтра -->
                 <fieldset>
                   <button class="filter-form__fieldset-control button" type="button"><span>Material</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
@@ -142,10 +147,9 @@
                       <label for="silver-id">Silver</label>
                     </div>
                   </div>
-                  <!-- </div> -->
                 </fieldset>
+                <!-- filter-form__fieldsets--open  - открытый список фильтра -->
                 <fieldset>
-                  <!-- <div class="filter-form__fieldset-control"> -->
                   <button class="filter-form__fieldset-control filter-form__fieldset-control--collection button"
                     type="button"><span>Collection</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
@@ -162,10 +166,9 @@
                       <label for="galaxy-id">Dreams</label>
                     </div>
                   </div>
-                  <!-- </div> -->
                 </fieldset>
+                <!-- filter-form__fieldsets--open  - открытый список фильтра -->
                 <fieldset class="filter-form__fieldset--open">
-                  <!-- <div class="filter-form__fieldset-control"> -->
                   <button class="filter-form__fieldset-control button" type="button"><span>Price</span>
                     <svg class="filter-form__fieldset-icon" width="17" height="10" viewbox="0 0 17 10" fill="none">
                       <use xlink:href="img/sprite_auto.svg#icon-up"></use>
@@ -201,16 +204,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/double-pearl-mobile@1x.webp 1x, img/catalog/products/double-pearl-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/double-pearl-tablet@1x.webp 1x, img/catalog/products/double-pearl-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/double-pearl-desktop@1x.webp 1x, img/catalog/products/double-pearl-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/double-pearl-desktop@1x.jpg 270w,
                                                 img/catalog/products/double-pearl-desktop@2x.jpg 540w,
                                                 img/catalog/products/double-pearl-tablet@1x.jpg 206w,
@@ -236,16 +239,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/black-choker-mobile@1x.webp 1x, img/catalog/products/black-choker-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/black-choker-tablet@1x.webp 1x, img/catalog/products/black-choker-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/black-choker-desktop@1x.webp 1x, img/catalog/products/black-choker-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/black-choker-desktop@1x.jpg 270w,
                                                             img/catalog/products/black-choker-desktop@2x.jpg 540w,
                                                             img/catalog/products/black-choker-tablet@1x.jpg 206w,
@@ -272,16 +275,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/gold-layered-mobile@1x.webp 1x, img/catalog/products/gold-layered-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/gold-layered-tablet@1x.webp 1x, img/catalog/products/gold-layered-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/gold-layered-desktop@1x.webp 1x, img/catalog/products/gold-layered-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/gold-layered-desktop@1x.jpg 270w,
                                                               img/catalog/products/gold-layered-desktop@2x.jpg 540w,
                                                               img/catalog/products/gold-layered-tablet@1x.jpg 206w,
@@ -308,16 +311,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/blue-gemstone-mobile@1x.webp 1x, img/catalog/products/blue-gemstone-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/blue-gemstone-tablet@1x.webp 1x, img/catalog/products/blue-gemstone-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/blue-gemstone-desktop@1x.webp 1x, img/catalog/products/blue-gemstone-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/blue-gemstone-desktop@1x.jpg 270w,
                                                               img/catalog/products/blue-gemstone-desktop@2x.jpg 540w,
                                                               img/catalog/products/blue-gemstone-tablet@1x.jpg 206w,
@@ -344,16 +347,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/boho-earrings-mobile@1x.webp 1x, img/catalog/products/boho-earrings-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/boho-earrings-tablet@1x.webp 1x, img/catalog/products/boho-earrings-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
-                      srcset="img/img/catalog/products/boho-earrings-desktop@1x.webp 1x, img/catalog/products/boho-earrings-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                      srcset="img/catalog/products/boho-earrings-desktop@1x.webp 1x, img/catalog/products/boho-earrings-desktop@2x.webp 2x">
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/boho-earrings-desktop@1x.jpg 270w,
                                                               img/catalog/products/boho-earrings-desktop@2x.jpg 540w,
                                                               img/catalog/products/boho-earrings-tablet@1x.jpg 206w,
@@ -380,16 +383,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/bird-necklace-mobile@1x.webp 1x, img/catalog/products/bird-necklace-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/bird-necklace-tablet@1x.webp 1x, img/catalog/products/bird-necklace-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/bird-necklace-desktop@1x.webp 1x, img/catalog/products/bird-necklace-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/bird-necklace-desktop@1x.jpg 270w,
                                                               img/catalog/products/bird-necklace-desktop@2x.jpg 540w,
                                                               img/catalog/products/bird-necklace-tablet@1x.jpg 206w,
@@ -416,16 +419,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/black-leather-mobile@1x.webp 1x, img/catalog/products/black-leather-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/black-leather-tablet@1x.webp 1x, img/catalog/products/black-leather-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/black-leather-desktop@1x.webp 1x, img/catalog/products/black-leather-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/black-leather-desktop@1x.jpg 270w,
                                 img/catalog/products/black-leather-desktop@2x.jpg 540w,
                                 img/catalog/products/black-leather-tablet@1x.jpg 206w,
@@ -451,16 +454,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/purple-gemstone-mobile@1x.webp 1x, img/catalog/products/purple-gemstone-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/purple-gemstone-tablet@1x.webp 1x, img/catalog/products/purple-gemstone-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544-->
                     <source type="image/webp"
                       srcset="img/catalog/products/purple-gemstone-desktop@1x.webp 1x, img/catalog/products/purple-gemstone-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/purple-gemstone-desktop@1x.jpg 270w,
                                                               img/catalog/products/purple-gemstone-desktop@2x.jpg 540w,
                                                               img/catalog/products/purple-gemstone-tablet@1x.jpg 206w,
@@ -487,16 +490,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/elephant-earrings-mobile@1x.webp 1x, img/catalog/products/elephant-earrings-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/elephant-earrings-tablet@1x.webp 1x, img/catalog/products/elephant-earrings-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544 -->
                     <source type="image/webp"
                       srcset="img/catalog/products/elephant-earrings-desktop@1x.webp 1x, img/catalog/products/elephant-earrings-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img
                       srcset="img/catalog/products/elephant-earrings-desktop@1x.jpg 270w,
                                                               img/catalog/products/elephant-earrings-desktop@2x.jpg 540w,
@@ -524,16 +527,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/threader-necklace-mobile@1x.webp 1x, img/catalog/products/threader-necklace-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/threader-necklace-tablet@1x.webp 1x, img/catalog/products/threader-necklace-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544 -->
                     <source type="image/webp"
                       srcset="img/catalog/products/threader-necklace-desktop@1x.webp 1x, img/catalog/products/threader-necklace-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/threader-necklace-desktop@1x.jpg 270w,
                               img/catalog/products/threader-necklace-desktop@2x.jpg 540w,
                               img/catalog/products/threader-necklace-tablet@1x.jpg 206w,
@@ -559,16 +562,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/origami-crane-mobile@1x.webp 1x, img/catalog/products/origami-crane-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/origami-crane-tablet@1x.webp 1x, img/catalog/products/origami-crane-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544 -->
                     <source type="image/webp"
                       srcset="img/catalog/products/origami-crane-desktop@1x.webp 1x, img/catalog/products/origami-crane-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/origami-crane-desktop@1x.jpg 270w,
                                 img/catalog/products/origami-crane-desktop@2x.jpg 540w,
                                 img/catalog/products/origami-crane-tablet@1x.jpg 206w,
@@ -594,16 +597,16 @@
               <a class="products__item" href="#">
                 <div class="products__img-wrapper">
                   <picture>
-                    <!-- 1x  -->
+                    <!-- 1x 130x136  2x 260x262 -->
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/catalog/products/marble-earrings-mobile@1x.webp 1x, img/catalog/products/marble-earrings-mobile@2x.webp 2x">
-                    <!-- 1x  -->
+                    <!-- 1x  206x208 2x 412x416 -->
                     <source type="image/webp" media="(max-width: 1023px)"
                       srcset="img/catalog/products/marble-earrings-tablet@1x.webp 1x, img/catalog/products/marble-earrings-tablet@2x.webp 2x">
-                    <!-- 1x -->
+                    <!-- 1x 270x272  2x 540x544 -->
                     <source type="image/webp"
                       srcset="img/catalog/products/marble-earrings-desktop@1x.webp 1x, img/catalog/products/marble-earrings-desktop@2x.webp 2x">
-                    <!-- mob   -->
+                    <!-- mob 1x 130x136  2x 260x262 pad   1x  206x208 2x 412x416  desktop  1x 270x272  2x 540x544 -->
                     <img srcset="img/catalog/products/marble-earrings-desktop@1x.jpg 270w,
                                                             img/catalog/products/marble-earrings-desktop@2x.jpg 540w,
                                                             img/catalog/products/marble-earrings-tablet@1x.jpg 206w,
@@ -715,30 +718,30 @@
       </div>
     </div>
   </footer>
-<div class="login__wrapper" id="login-popup">
-  <div class="login__content login__content--modal">
-    <div class="login__deco-img"></div>
-    <button class="button login__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>
-      <svg class="login__close-icon" width="14" height="14" viewbox="0 0 14 14" fill="none">
-        <use xlink:href="img/sprite_auto.svg#icon-cross">
-        </use>
-      </svg>
-    </button>
-    <form class="login__form" name="login-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-      <h2>Log In</h2>
-      <label class="login__form-label">
-        <input type="email" name="email" id="email" placeholder="Your E-mail" required>
-      </label>
-      <label class="login__form-label">
-        <input type="password" name="password" id="email" placeholder="Password" required>
-      </label>
-      <a class="login__fogot-link link" href="#">Forgot your password?</a>
-      <button class="login__submit-button button button--fill" type="submit">Log In</button>
-      <p>Don’t have an account? <a class="login__sign-link link" href="#">Sign up</a></p>
-    </form>
-  </div>
-  <script src="./js/vendor.min.js"></script>
-  <script src="./js/main.min.js"></script>
+  <div class="login__wrapper" id="login-popup">
+    <div class="login__content login__content--modal">
+      <div class="login__deco-img"></div>
+      <button class="button login__close-button" type="button"><span class="visually-hidden">Закрыть окно</span>
+        <svg class="login__close-icon" width="14" height="14" viewbox="0 0 14 14" fill="none">
+          <use xlink:href="img/sprite_auto.svg#icon-cross">
+          </use>
+        </svg>
+      </button>
+      <form class="login__form" name="login-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+        <h2>Log In</h2>
+        <label class="login__form-label">
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+        </label>
+        <label class="login__form-label">
+          <input type="password" name="password" id="email" placeholder="Password" required>
+        </label>
+        <a class="login__fogot-link link" href="#">Forgot your password?</a>
+        <button class="login__submit-button button button--fill" type="submit">Log In</button>
+        <p>Don’t have an account? <a class="login__sign-link link" href="#">Sign up</a></p>
+      </form>
+    </div>
+    <script src="./js/vendor.min.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>

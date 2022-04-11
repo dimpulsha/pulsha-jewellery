@@ -43,6 +43,7 @@ $blog-background: $desert-storm;
 $range-inactive: $desert-storm;
 $login-background: $desert-storm;
 $header-decor-line: $seashell;
+$login-label-line: $wood-bark;
 
 // Gradient
 
@@ -53,7 +54,7 @@ $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0)
 
 // Шрифты
 // ---------------------------------
-$main-font: "Poppins", Arial, sans-serif;
+$main-font: "Poppins", "Arial", sans-serif;
 $secondary-font: "Cormorant Garamond", "Times New Roman", serif;
 
 // переменная используемая в html для подключения скейлинга

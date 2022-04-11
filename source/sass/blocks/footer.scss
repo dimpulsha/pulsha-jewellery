@@ -39,6 +39,7 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
+
   @media (max-width: $mobile-max-width) {
     grid-column: unset;
     grid-row: unset;
@@ -50,11 +51,9 @@
   justify-content: flex-start;
   margin-top: 5px;
   margin-left: 5px;
-  // justify-content: space-between;
   min-width: 320px;
 
   @media (max-width: $tablet-max-width) {
-    // grid-column: 1 / 3;
     margin-left: 0;
     grid-row: 2 / 3;
     display: grid;
@@ -64,7 +63,6 @@
 
   @media (max-width: $mobile-max-width) {
     grid-row: unset;
-    justify-self: start;
     grid-template-columns: 1fr;
     justify-self: start;
     row-gap: 20px;
@@ -101,6 +99,7 @@
   @media (max-width: $tablet-max-width) {
     justify-self: start;
   }
+
   @media (max-width: $mobile-max-width) {
     display: flex;
     flex-wrap: wrap;
@@ -124,6 +123,7 @@
 
   @media (max-width: $mobile-max-width) {
     column-gap: 0;
+
     & span {
       @include visually-hidden;
     }

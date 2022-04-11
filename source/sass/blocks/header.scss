@@ -67,6 +67,7 @@
   margin-top: 33px;
   margin-bottom: 50px;
   justify-self: start;
+
   @media (max-width: $tablet-max-width) {
     display: none;
   }
@@ -102,6 +103,7 @@
   fill: $accented-logo;
   width: 66px;
   height: 66px;
+
   @media (max-width: $mobile-max-width) {
     width: 52px;
     height: 52px;
@@ -118,9 +120,11 @@
 .header__user-menu {
   grid-area: c;
   margin-top: 42px;
+
   @media (max-width: $tablet-max-width) {
     margin-top: 54px;
   }
+
   @media (max-width: $mobile-max-width) {
     margin-top: 37px;
   }
@@ -173,6 +177,7 @@
     display: initial;
     justify-self: start;
   }
+
   @media (max-width: $mobile-max-width) {
     margin-top: 5px;
   }
@@ -183,6 +188,7 @@
   @media (max-width: $tablet-max-width) {
     margin-top: 25px;
   }
+
   @media (max-width: $mobile-max-width) {
     margin-top: 15px;
   }

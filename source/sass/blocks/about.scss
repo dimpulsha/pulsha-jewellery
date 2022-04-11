@@ -6,6 +6,7 @@
 
 .about li {
   margin-bottom: 30px;
+
   @media (max-width: $tablet-max-width) {
     margin-bottom: 22px;
   }

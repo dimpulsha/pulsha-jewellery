@@ -4,7 +4,7 @@ html {
 }
 
 * {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * a {
@@ -13,7 +13,10 @@ box-sizing: inherit;
   cursor: pointer;
 }
 
-* h1, * h2, * h3, * p {
+* h1,
+* h2,
+* h3,
+* p {
   margin: 0;
 }
 
