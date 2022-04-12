@@ -1,10 +1,8 @@
-// слайдер
 const sliderElement = document.querySelector('.swiper');
 if (sliderElement) {
 
   const swiper =
     new Swiper('.swiper', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
 
@@ -23,7 +21,6 @@ if (sliderElement) {
           pagination: {
             el: '.slider__pagination',
             type: 'fraction',
-            // clickable: true,
             renderFraction(currentClass, totalClass) {
               return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
             },
@@ -61,7 +58,6 @@ if (sliderElement) {
 
 const isEscKey = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
 
-// faq
 const faqAccordeonButtons = document.querySelectorAll('.faq__question-head button');
 
 if (faqAccordeonButtons) {
@@ -74,7 +70,6 @@ if (faqAccordeonButtons) {
   );
 }
 
-// главное меню
 const menuButton = document.querySelector('.header__menu-button');
 const page = document.querySelector('.page');
 
@@ -95,7 +90,6 @@ const onEscCloseFilter = (evt) => {
   }
 };
 
-// фильтр
 const filter = document.querySelector('.filter-form');
 const catalogControl = document.querySelector('.catalog__filter-control');
 
@@ -126,8 +120,6 @@ if (filter) {
     });
   }
 }
-
-// модалка логина и localStorage
 
 const userInfo = {
   userEmail: '',
@@ -174,7 +166,6 @@ const closePopup = (evt) => {
   }
 };
 
-// const loginPopup = document.querySelector('#login-popup');
 const loginHeadLink = document.querySelectorAll('.menu-login');
 
 if (loginHeadLink) {
@@ -189,7 +180,6 @@ if (loginHeadLink) {
 
       loadData(loginForm);
       formEmail.focus();
-      // console.log(loginForm);
       const onLoginSubmit = () => saveData(loginForm);
 
       loginPopup.addEventListener('click', closePopup);

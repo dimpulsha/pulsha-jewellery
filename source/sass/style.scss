@@ -1,29 +1,12 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
-
-// Global
-// ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "viewport";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-// @import "global/container";
 @import "global/html";
-
-// Swiper
-// ------------------
 @import "swiper/swiper";
-
-// Blocks
-// ---------------------------------
-
 @import "blocks/btn";
 @import "blocks/search-form";
 @import "blocks/link";
@@ -44,5 +27,3 @@
 @import "blocks/filter-form";
 @import "blocks/products";
 @import "blocks/login";
-
-// ---------------------------------
