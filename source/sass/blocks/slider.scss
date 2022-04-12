@@ -16,6 +16,11 @@
   stroke: currentColor;
 }
 
+.slider__arrows:hover svg,
+.slider__arrows:focus svg {
+  stroke: $text;
+}
+
 .slider__img-wrapper {
   width: 100%;
 }

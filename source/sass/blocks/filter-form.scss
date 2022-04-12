@@ -199,17 +199,37 @@ input[type="checkbox"] + label {
     }
   }
 
-  &:hover,
-  &:focus {
+  // &:hover,
+  // &:focus {
+  //   color: $accented-line;
+  //   text-decoration: underline;
+  //   outline: 1px solid darkblue;
+  // }
+
+  // &:active {
+  //   color: $inactive-text;
+  //   // text-decoration: underline;
+  //   text-decoration: none;
+  // }
+}
+
+input[type="checkbox"] {
+
+  &:hover + label,
+  &:focus + label {
     color: $accented-line;
-    text-decoration: underline;
+    // text-decoration: underline;
+    outline: 1px solid $accented-line;
   }
 
-  &:active {
+  &:active + label{
     color: $inactive-text;
-    text-decoration: none;
+    text-decoration: underline;
+    outline: none;
+    // text-decoration: none;
   }
 }
+
 
 input[type="checkbox"]:checked + label {
   &::before {

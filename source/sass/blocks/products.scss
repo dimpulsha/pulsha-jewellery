@@ -19,7 +19,8 @@
   text-align: center;
 }
 
-.products__item:hover {
+.products__item:hover,
+.products__item:focus {
   h4 {
     color: $accented-text;
     text-decoration: underline;

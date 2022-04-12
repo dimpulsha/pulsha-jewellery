@@ -1609,6 +1609,11 @@ img {
   stroke: currentColor;
 }
 
+.slider__arrows:hover svg,
+.slider__arrows:focus svg {
+  stroke: #1d1613;
+}
+
 .slider__img-wrapper {
   width: 100%;
 }
@@ -1918,6 +1923,10 @@ img {
   display: none;
 }
 
+.page--filter-open .catalog__product-list {
+  display: none;
+}
+
 .filter-form__close-button {
   display: none;
 }
@@ -2039,15 +2048,16 @@ input[type="checkbox"] + label::before {
   border: 1px solid #a87b62;
 }
 
-input[type="checkbox"] + label:hover,
-input[type="checkbox"] + label:focus {
+input[type="checkbox"]:hover + label,
+input[type="checkbox"]:focus + label {
   color: #a87b62;
-  text-decoration: underline;
+  outline: 1px solid #a87b62;
 }
 
-input[type="checkbox"] + label:active {
+input[type="checkbox"]:active + label {
   color: #9b9997;
-  text-decoration: none;
+  text-decoration: underline;
+  outline: none;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -2155,12 +2165,14 @@ input[type="number"] {
   text-align: center;
 }
 
-.products__item:hover h4 {
+.products__item:hover h4,
+.products__item:focus h4 {
   color: #a87b62;
   text-decoration: underline;
 }
 
-.products__item:hover p {
+.products__item:hover p,
+.products__item:focus p {
   color: #a87b62;
 }
 
