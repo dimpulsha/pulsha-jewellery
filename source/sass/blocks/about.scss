@@ -19,4 +19,8 @@
 
 .about--footer li {
   margin-bottom: 21px;
+
+  @media (max-width: $tablet-max-width) {
+  margin-bottom: 21px;
+  }
 }

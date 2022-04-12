@@ -72,10 +72,10 @@
 
 .page__section--follow {
   margin-bottom: 132px;
-  padding-top: 10px;
 
   @media (max-width: $tablet-max-width) {
     margin-bottom: 80px;
+    padding-top: 10px;
   }
 
   @media (max-width: $mobile-max-width) {

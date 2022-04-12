@@ -8,6 +8,8 @@
     position: absolute;
     right: -25px;
     top: -20px;
+    width: 32px;
+    height: 32px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -51,6 +53,8 @@
   position: absolute;
   right: 0;
   top: 0;
+  width: 32px;
+  height: 32px;
 }
 
 .page--filter-open .filter-form__body {
@@ -214,7 +218,6 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"] {
-
   &:hover + label,
   &:focus + label {
     color: $accented-line;
@@ -222,14 +225,13 @@ input[type="checkbox"] {
     outline: 1px solid $accented-line;
   }
 
-  &:active + label{
+  &:active + label {
     color: $inactive-text;
     text-decoration: underline;
     outline: none;
     // text-decoration: none;
   }
 }
-
 
 input[type="checkbox"]:checked + label {
   &::before {

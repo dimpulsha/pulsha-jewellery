@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    padding: 14px 25px 20px 23px;
+    padding: 14px 55px 20px 23px;
 
     &:not(:first-child) {
       padding-top: 17px;
@@ -79,7 +79,6 @@
 
   @media (max-width: $mobile-max-width) {
     margin-top: 15px;
-    max-width: 205px;
   }
 }
 

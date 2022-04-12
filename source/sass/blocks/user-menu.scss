@@ -15,23 +15,21 @@
 
   @media (max-width: $tablet-max-width) {
     display: initial;
-    stroke: currentColor;
+    // stroke: currentColor;
+    stroke: $icon-color;
   }
 
   &:hover {
     stroke: $icon-color-accented;
   }
-
-  &:active {
-    stroke: $icon-color-active;
-  }
 }
 
 .no-js .user-menu__cart-icon,
 .page--menu-open .user-menu__cart-icon {
-  &:hover {
-    stroke: $icon-color;
-  }
+  stroke: $inversion-text;
+  // &:hover {
+  //   stroke: $icon-color;
+  // }
 }
 
 .user-menu__cart-text,

@@ -12,6 +12,7 @@
   row-gap: 34px;
 
   @media (max-width: $tablet-max-width) {
+    padding-top: 10px;
     column-gap: 16px;
     row-gap: 21px;
   }

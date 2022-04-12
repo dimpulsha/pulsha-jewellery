@@ -60,6 +60,32 @@ if (sliderElement) {
 
 const isEscKey = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
 
+const focusElementArray = ['input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
+  'button:not([disabled]):not([aria-hidden])',
+  'textarea:not([disabled]):not([aria-hidden])', 'a:not([disabled]):not([aria-hidden])', 'div[tabindex]:not([aria-hidden])'];
+
+const loginPopup = document.querySelector('#login-popup');
+const menuPopup = document.querySelector('.header__container');
+
+const createSwitchField = (focusListArray, target) => (evt) => {
+  const fieldList = target.querySelectorAll(focusListArray);
+  const nodesList = Array.prototype.slice.call(fieldList);
+
+  if (evt.key === 'Tab') {
+    if (evt.shiftKey) {
+      if (evt.target === nodesList[0]) {
+        evt.preventDefault();
+        nodesList[nodesList.length - 1].focus();
+      }
+    } else {
+      if (evt.target === nodesList[nodesList.length - 1]) {
+        evt.preventDefault();
+        nodesList[0].focus();
+      }
+    }
+  }
+};
+
 const faqAccordeonButtons = document.querySelectorAll('.faq__question-head button');
 
 if (faqAccordeonButtons) {
@@ -79,9 +105,19 @@ const removeFilterClass = () => {
   page.classList.remove('page--filter-open');
 };
 
+const menuFieldSwitch = createSwitchField(focusElementArray, menuPopup);
+
 if (menuButton) {
   menuButton.addEventListener('click', () => {
     page.classList.toggle('page--menu-open');
+
+    if (page.classList.contains('page--menu-open')) {
+      menuPopup.addEventListener('keydown', menuFieldSwitch);
+    }
+
+    if (!page.classList.contains('page--menu-open')) {
+      menuPopup.removeEventListener('keydown', menuFieldSwitch);
+    }
   });
 }
 
@@ -95,6 +131,8 @@ const onEscCloseFilter = (evt) => {
 const filter = document.querySelector('.filter-form');
 const catalogControl = document.querySelector('.catalog__filter-control');
 
+const menuFilterSwitch = createSwitchField(focusElementArray, filter);
+
 if (filter) {
   const fieldsetControl = filter.querySelectorAll('.filter-form__fieldset-control');
   const filterCloseButton = filter.querySelector('.filter-form__close-button');
@@ -103,6 +141,7 @@ if (filter) {
     catalogControl.addEventListener('click', () => {
       page.classList.add('page--filter-open');
       document.addEventListener('keydown', onEscCloseFilter);
+      filter.addEventListener('keydown', menuFilterSwitch);
     });
   }
 
@@ -119,6 +158,7 @@ if (filter) {
     filterCloseButton.addEventListener('click', () => {
       page.classList.remove('page--filter-open');
       document.removeEventListener('keydown', onEscCloseFilter);
+      filter.removeEventListener('keydown', menuFilterSwitch);
     });
   }
 }
@@ -170,12 +210,14 @@ const closePopup = (evt) => {
 
 const loginHeadLink = document.querySelectorAll('.menu-login');
 
+const loginSwichField = createSwitchField(focusElementArray, loginPopup);
+
 if (loginHeadLink) {
   loginHeadLink.forEach((element) => {
     element.addEventListener('click', (evt) => {
       evt.preventDefault();
       page.classList.add('page__login-popup--open');
-      const loginPopup = document.querySelector('#login-popup');
+
       const loginForm = loginPopup.querySelector('.login__form');
       const formEmail = loginForm.querySelector('#email');
       const loginSubmit = loginForm.querySelector('.login__submit-button');
@@ -186,7 +228,10 @@ if (loginHeadLink) {
 
       loginPopup.addEventListener('click', closePopup);
       document.addEventListener('keydown', closePopupKey);
+      loginPopup.addEventListener('keydown', loginSwichField);
       loginSubmit.addEventListener('click', onLoginSubmit);
     });
   });
 }
+
+page.classList.remove('no-js');

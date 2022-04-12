@@ -8,6 +8,7 @@
   @media (max-width: $tablet-max-width) {
     background-color: $background-accented;
     height: 100vh;
+    overflow: auto;
   }
 }
 
@@ -28,6 +29,7 @@
   @media (max-width: $tablet-max-width) {
     color: $inversion-text;
     padding-bottom: 50px;
+    // overflow: auto;
   }
 }
 
@@ -58,14 +60,14 @@
 .no-js .header__menu-icon,
 .page--menu-open .header__menu-icon {
   &:hover {
-    stroke: $icon-color;
+    stroke: currentColor;
   }
 }
 
 .header__search {
   grid-area: a;
   margin-top: 33px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   justify-self: start;
 
   @media (max-width: $tablet-max-width) {
@@ -91,12 +93,16 @@
 .header__logo {
   grid-area: b;
   margin-top: 30px;
-  padding-bottom: 19px;
+  margin-bottom: 9px;
 
   @media (max-width: $mobile-max-width) {
     margin-top: 20px;
     padding-bottom: 15px;
   }
+}
+
+.header__logo--main {
+  cursor: default;
 }
 
 .header__logo-icon {
@@ -120,9 +126,11 @@
 .header__user-menu {
   grid-area: c;
   margin-top: 42px;
+  padding-bottom: 10px;
 
   @media (max-width: $tablet-max-width) {
     margin-top: 54px;
+    padding-bottom: 0px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -134,13 +142,13 @@
   position: relative;
   grid-area: e;
   justify-self: center;
-  padding-top: 12px;
+  padding-top: 22px;
   margin-left: -25px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: 0;
     left: calc(calc(105% - 100vw) / 2);
     width: 100vw;
     height: 1px;
@@ -159,6 +167,7 @@
   }
 
   @media (max-width: $tablet-max-width) {
+    padding-top: 12px;
     display: flex;
     justify-self: start;
     margin-left: 0;
