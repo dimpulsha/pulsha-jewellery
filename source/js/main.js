@@ -1,3 +1,5 @@
+// import {Swiper} from './vendor/swiper.js';
+
 const sliderElement = document.querySelector('.swiper');
 if (sliderElement) {
 
