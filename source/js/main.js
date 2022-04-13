@@ -6,7 +6,7 @@ if (sliderElement) {
   const swiper =
     new Swiper('.swiper', {
       direction: 'horizontal',
-      loop: true,
+      loop: false,
 
       navigation: {
         nextEl: '.slider__arrows-item--next',

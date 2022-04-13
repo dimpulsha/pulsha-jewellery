@@ -11,6 +11,10 @@
   background-color: $background-inversion;
 }
 
+.login-page .login {
+  display: block;
+}
+
 .page__login-popup--open .login {
   display: flex;
   justify-content: center;

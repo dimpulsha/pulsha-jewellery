@@ -2275,6 +2275,10 @@ input[type="number"] {
   background-color: #ffffff;
 }
 
+.login-page .login {
+  display: block;
+}
+
 .page__login-popup--open .login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2612,7 +2616,7 @@ input[type="number"] {
   }
 
   .page__header {
-    margin-bottom: 6px;
+    margin-bottom: 16px;
   }
 
   .page__section {
@@ -2670,7 +2674,7 @@ input[type="number"] {
     justify-self: start;
     -ms-grid-row-align: center;
     align-self: center;
-    margin-top: 8px;
+    margin-top: 18px;
   }
 
   .header__search {
