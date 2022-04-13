@@ -1275,7 +1275,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: calc(calc(105% - 100vw) / 2);
+  left: calc(calc(100% - 100vw + 20px) / 2);
   width: 100vw;
   height: 1px;
   background-color: #f6f5f4;
